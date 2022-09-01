@@ -1,5 +1,7 @@
 # FarmaFast 
 
+![Logotipo FarmaFast](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/PharmaPUC%20(1).jpg)
+
 `Tecnologia em Análise e Desenvolvimento de Sistema`
 
 `Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio`
