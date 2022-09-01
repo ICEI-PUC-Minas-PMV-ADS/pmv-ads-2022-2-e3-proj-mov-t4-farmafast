@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+# FarmaFast 
 
-`CURSO`
+`Tecnologia em Análise e Desenvolvimento de Sistema`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio`
 
-`SEMESTRE`
+`Eixo 3`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Este projeto trata-se do desenvolvimento de uma aplicação funcional, que  auxilia no processo de compra de medicamentos, além de economizar o tempo do usuário.
 
 ## Integrantes
 
 * Arthur Victor de Paula
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Fábio Furlan
+* Isabella Carolina de Almeida Siqueira Damião
+* Julia Mendes Lima da Cunha
+* Vitória Gabriella Maffei Corrêa
 
 ## Orientador
 
-* Nome completo do professor 1
+* Mateus Curcino De Lima
 
 ## Instruções de utilização
 
