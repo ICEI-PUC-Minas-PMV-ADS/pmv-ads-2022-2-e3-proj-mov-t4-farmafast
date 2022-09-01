@@ -96,7 +96,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 O diagrama contempla as principais ligações entre os casos de uso e permite detalhar os Requisitos Funcionais identificados na etapa anterior.
 
-DIAGRAMA AQUI
+![Diagrama de Casos de Uso](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/diagrama%20cdu.png)
 
 # Matriz de Rastreabilidade
 
@@ -130,10 +130,10 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que a gestão seja gerenciada de modo que as tarefas e pessoas envolvidas no projeto possam ser vistas facilmente.
 
-IMAGEM AQUI
+![Equipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/TIME.png)
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-IMAGEM AQUI
+![Orçamento do projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/orcamento.png)
