@@ -1,44 +1,25 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A escolha do referido problema foi definida por meio de discussões e estudos realizados pelos membros da equipe. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+A definição do problema foi consolidada com a participação dos usuários por meio de entrevistas, elaborando a criação das pessoas e histórias de usuários.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+PERSONAS AQUI
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir de uma entrevista com as pessoas, foi possível registrar as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`       |
+|--------------------|------------------------------------|------------------------------|
+|  Maurício José Pimentel | Solicitar o medicamento sem precisar ir ao local. | Para não precisar pegar fila e ficar muito tempo em pé. |
+|  Júlia Gabriella Campos | Saber a lista de medicamentos solicitados no momento. | Para verificar se está em falta.|
+| Ana Angélica Medeiros | Visualizar o status do processo de solicitação. | Para que me ajude na organização, evitando a falta de medicamentos nas farmácias populares. |
+|  Débora Beatriz Souza | Saber o motivo do cancelamento da sua solicitação. | Para conseguir resolver problemas futuros, caso isso se repita. |
+|  Joaquim Luiz Ferreira | Facilidade de acesso e boa interatividade.| Para conseguir adquirir seus medicamentos mais rapidamente. |
+|  PERSONA DAS FARMÁCIAS | ----------------- | ----------------- |
 
 ## Modelagem do Processo de Negócio 
 
@@ -79,30 +60,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve dispor de um campo para cadastro do usuário, onde será registrado seu nome, data de nascimento, CPF e senha, e também da farmácia, onde será registrado nome do local, CNPJ e senha; | ALTA | 
+|RF-002| O sistema deve permitir que o usuário realize o login utilizando seu CPF e senha, e que a farmácia realize o login utilizando seu CPNJ e senha cadastrados;| ALTA |
+|RF-003| O sistema deve dispor de um campo para a solicitação de medicamentos, onde o usuário também poderá anexar suas guias e receitas; | ALTA | 
+|RF-004| O sistema deve disponibilizar a função “status de solicitação”, onde a farmácia poderá informar ao cliente, de forma ágil, qual é o estágio da sua solicitação. As opções do “status de solicitação” serão as seguintes: “aprovado”, “Em processo”, “Recusado - motivo”, “Liberado para retirada” e, por fim, “pedido entregue”;| ALTA |
+|RF-005| O sistema deve disponibilizar, ao lado do status, o motivo do cancelamento, caso a solicitação seja cancelada; | MÉDIA | 
+|RF-006| O sistema deve permitir a alteração da senha;| MÉDIA |
+|RF-007| O sistema deve permitir solicitações apenas no horário de funcionamento da farmácia, caso contrário, deve apresentar uma mensagem ao usuário, pedindo para que solicite no horário de funcionamento; | MÉDIA | 
+|RF-008| O sistema deve dispor de uma central de ajuda;| BAIXA |
+|RF-009| O sistema deve dispor de um campo para feedbacks, onde o cliente poderá avaliar e comentar sobre sua experiência com a farmácia. | BAIXA | 
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O sistema deve ser responsivo, para rodar em um dispositivo móvel; | ALTA | 
+|RNF-002| O sistema deve ser implementado com JavaScript e React-Native; |  ALTA | 
+|RNF-003| A aplicação deve ser compatível com sistemas Android e iOS; | ALTA | 
+|RNF-004| O aplicativo deve se restringir às tecnologias de desenvolvimento mobile. |  ALTA | 
 
 ## Restrições
 
@@ -110,27 +86,17 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|01| A primeira etapa do projeto referente a análise e especificação do problema deverá ser entregue até o dia 04/09/2022; |
+|02| A segunda etapa do projeto referente ao levantamento dos requisitos e funcionalidades do sistema, como também os planos de testes de funcionalidade/usabilidade deverá ser entregue até o dia 02/10/2022;|
+|03| A terceira etapa do projeto referente a 1° parte do desenvolvimento da solução deverá ser entregue até o dia 30/10/2022;|
+|04| A quarta etapa do projeto refere-se à 2° parte do desenvolvimento do plano de teste, das funcionalidades e da usabilidade da aplicação até o dia 27/11; |
+|05| A quinta etapa do projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 07/12/2022. |
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama contempla as principais ligações entre os casos de uso e permite detalhar os Requisitos Funcionais identificados na etapa anterior.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+DIAGRAMA AQUI
 
 # Matriz de Rastreabilidade
 
@@ -158,16 +124,16 @@ Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o ger
 
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![Gráfico de Gantt](img/02-grafico-gantt.png) FALTANDO!!!!!!!!!!!!!!!!!
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que a gestão seja gerenciada de modo que as tarefas e pessoas envolvidas no projeto possam ser vistas facilmente.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+IMAGEM AQUI
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+IMAGEM AQUI
