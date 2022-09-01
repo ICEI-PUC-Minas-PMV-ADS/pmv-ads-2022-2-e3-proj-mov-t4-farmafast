@@ -6,7 +6,11 @@ A escolha do referido problema foi definida por meio de discussões e estudos re
 
 A definição do problema foi consolidada com a participação dos usuários por meio de entrevistas, elaborando a criação das pessoas e histórias de usuários.
 
-PERSONAS AQUI
+![Persona 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona1.png)
+![Persona 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona2.png)
+![Persona 3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona3.png)
+![Persona 4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona4.png)
+![Persona 5](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona5.png)
 
 ## Histórias de Usuários
 
