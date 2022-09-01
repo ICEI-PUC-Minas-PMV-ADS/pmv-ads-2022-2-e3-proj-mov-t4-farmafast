@@ -89,7 +89,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| A primeira etapa do projeto referente a análise e especificação do problema deverá ser entregue até o dia 04/09/2022; |
 |02| A segunda etapa do projeto referente ao levantamento dos requisitos e funcionalidades do sistema, como também os planos de testes de funcionalidade/usabilidade deverá ser entregue até o dia 02/10/2022;|
 |03| A terceira etapa do projeto referente a 1° parte do desenvolvimento da solução deverá ser entregue até o dia 30/10/2022;|
-|04| A quarta etapa do projeto refere-se à 2° parte do desenvolvimento do plano de teste, das funcionalidades e da usabilidade da aplicação até o dia 27/11; |
+|04| A quarta etapa do projeto refere-se à 2° parte do desenvolvimento do plano de teste, das funcionalidades e da usabilidade da aplicação até o dia 27/11/2022; |
 |05| A quinta etapa do projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 07/12/2022. |
 
 ## Diagrama de Casos de Uso
