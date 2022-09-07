@@ -23,7 +23,6 @@ A partir de uma entrevista com as pessoas, foi possível registrar as seguintes 
 | Ana Angélica Medeiros | Visualizar o status do processo de solicitação. | Para que me ajude na organização, evitando a falta de medicamentos nas farmácias populares. |
 |  Débora Beatriz Souza | Saber o motivo do cancelamento da sua solicitação. | Para conseguir resolver problemas futuros, caso isso se repita. |
 |  Joaquim Luiz Ferreira | Facilidade de acesso e boa interatividade.| Para conseguir adquirir seus medicamentos mais rapidamente. |
-|  PERSONA DAS FARMÁCIAS | ----------------- | ----------------- |
 
 ## Modelagem do Processo de Negócio 
 
