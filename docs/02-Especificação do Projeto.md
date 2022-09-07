@@ -19,7 +19,7 @@ A partir de uma entrevista com as pessoas, foi possível registrar as seguintes 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`       |
 |--------------------|------------------------------------|------------------------------|
 |  Maurício José Pimentel | Solicitar o medicamento sem precisar ir ao local. | Para não precisar pegar fila e ficar muito tempo em pé. |
-|  Júlia Gabriella Campos | Saber a lista de medicamentos solicitados no momento. | Para verificar se está em falta.|
+|  Júlia Gabriella Campos | Saber a lista de medicamentos solicitados no momento. | Para verificar a disponibilidade do medicamento das farmácias em que trabalha.|
 | Ana Angélica Medeiros | Visualizar o status do processo de solicitação. | Para que me ajude na organização, evitando a falta de medicamentos nas farmácias populares. |
 |  Débora Beatriz Souza | Saber o motivo do cancelamento da sua solicitação. | Para conseguir resolver problemas futuros, caso isso se repita. |
 |  Joaquim Luiz Ferreira | Facilidade de acesso e boa interatividade.| Para conseguir adquirir seus medicamentos mais rapidamente. |
