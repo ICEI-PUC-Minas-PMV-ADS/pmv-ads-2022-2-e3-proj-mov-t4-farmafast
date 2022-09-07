@@ -10,9 +10,7 @@ A definição do problema foi consolidada com a participação dos usuários por
 ![Persona 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona2.png)
 ![Persona 3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona3.png)
 ![Persona 4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona4.png)
-![Persona 5](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona5.png)
-**ALTERAR FRUSTAÇÂO JOAQUIN**
-
+![Persona 5](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/persona.png)
 
 ## Histórias de Usuários
 
