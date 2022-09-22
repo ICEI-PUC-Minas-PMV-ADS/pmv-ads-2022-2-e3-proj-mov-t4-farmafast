@@ -19,7 +19,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ## Wireframes
 
-*Tela inicial*
+## Tela inicial
 
 Nesta tela, a pessoa que acessar o App, deverá informar se é um usuário comum ou uma farmácia.
 
@@ -32,44 +32,44 @@ Tela de Login da farmácia (CNPJ e senha) e tela de Login do usuário (CPF e sen
 ![Tela - Login Farmácia](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/login%20farm.png)
 ![Tela - Login Usuário](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/LOGIN%20USER.png)
 
-*Telas de cadastro*
+## Telas de cadastro
 
 Tela de cadastro do usuário e da farmácia.
 
 ![Tela - Cadastro Farmácia](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/cad%20-%20farmacia.png)
 ![Tela - Cadastro Usuário](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/cadastro%20-%20user.png)
 
-*Tela Esqueci minha senha*
+## Tela Esqueci minha senha
 
 Nesta o usuário do App, seja ele um usuário comum ou uma farmácia, poderá redefinir sua senha.
 
 ![Tela - Esqueci minha senha](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/esqueci%20a%20senha.png)
 
-*Tela de solicitação de medicamento*
+## Tela de solicitação de medicamento
 
 Nesta tela, o usuário poderá digitar o nome do medicamento e/ou anexar uma foto da receita.
 
 ![Tela - Solicitação de medicamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/tela%20solicitacao.png)
 
-*Tela de retorno da farmácia ao cliente*
+## Tela de retorno da farmácia ao cliente
 
 Nesta tela, o usuário poderá visualizar o status do seu pedido.
 
 ![Tela - Retorno](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/retorno%20farma.png)
 
-*Tela de Feedback pelo atendimento*
+## Tela de Feedback pelo atendimento
 
 Nesta tela, o usuário poderá avaliar a sua experiência com o atendimento da farmácia.
 
 ![Tela - feedback](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/feedback.png)
 
-*Tela de novos pedidos*
+## Tela de novos pedidos
 
 Nesta tela, a farmácia poderá visualizar as novas solicitações de medicamento.
 
 ![Tela - novos pedidos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/novos%20pedidos.png)
 
-*Tela de atualizar status dos pedidos*
+## Tela de atualizar status dos pedidos
 
 Nesta tela, a farmácia deverá atualizar o status do pedido do cliente, para que o mesmo consiga acompanhar.
 
