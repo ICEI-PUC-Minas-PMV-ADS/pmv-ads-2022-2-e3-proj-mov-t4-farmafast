@@ -25,7 +25,7 @@ O objetivo é desenvolver uma aplicação móvel para auxiliar na melhoria da sa
 
 ## Justificativa
 
-Pensando nestes problemas o FarmaFast, como dito anteriormente, tem como objetivo otimizar o processo de aquisição, tornando dispensável a apresentação presencial de guias, receitas e o contato direto com outras pessoas, além de poupar tempo, é um app de fácil navegação. Facilitando o trabalho de profissionais que atuam na distribuição e garantindo um melhor atendimento para o usuário, que não precisará se expor e se locomover até o local para solicitar seu remédio, já que tudo pode ser feito na segurança de sua casa.
+Desde a pandemia do coronavírus, iniciada em meados de março de 2020, a população tem enfrentado grandes problemas econômicos, causando desemprego para mais de 15 milhões de pessoas somente no primeiro semestre de 2021, de acordo com a pesquisa do IBGE. Pensando nessa calamidade e na saúde pública, os medicamentos gratuitos se tornam mais viáveis para os tratamentos médicos. Entretanto, é popularmente conhecida pelo público, as imensas filas encontradas nos postos de saúde, principalmente no setor da farmácia. Refletindo sobre esses problemas, fez-se necessário a criação do FarmaFast, para facilitar e otimizar o processo de aquisição dos medicamentos distribuídos pelo governo, possibilitando a qualidade e agilidade no trabalho dos profissionais que atuam nesse meio e garantindo um melhor atendimento para o usuário.
 
 ## Público-Alvo
 
