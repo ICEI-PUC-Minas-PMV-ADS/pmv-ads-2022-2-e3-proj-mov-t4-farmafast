@@ -1,14 +1,18 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia contempla as ferramentas utilizadas pela manutenção dos recursos e demais recursos quanto à organização do tempo e execução das tarefas do projeto. 
 
 ## Relação de Ambientes de Trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Os atributos do projeto foram desenvolvidos a partir das plataformas GitHub e Figma, e a relação dos ambientes está apresentada na tabela abaixo. 
+
+| Ambiente | Plataforma | Link de Acesso |
+--------- | ---------- |  -------------  |
+| Repositório de código fonte | GitHub |    |
+| Documentos do projeto | Figma | https://www.figma.com/file/rVLXxMyInok3LcmbIebwC2/Untitled?node-id=0%3A1 |
+| Gerenciamento de Projeto | Kanban, Gantt | |
+| Comunicação e Reuniões | Equipes Microsoft | |
 
 ## Controle de Versão
 
