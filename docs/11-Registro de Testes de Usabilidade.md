@@ -1,8 +1,43 @@
 # Registro de Testes de Usabilidade
 
 Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+A análise do resultado do teste de usabilidade à distância deve ser igual ao de um teste presencial, para registro uma tabela conforme abaixo:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+**CT 01 - Cadastro de novo usuário e farmácia**
+| **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Usuário 1	| - anos	| ---| 00:00:00 | - | - | - | --- |
+| Usuário 2 | - anos| ---| 00:00:00  | -  | - | -  |--- |
+| Usuário 3	| -	anos| ---	| 00:00:00  | -  | - |  - | --- |
+| Usuário 4	| - anos| ---	| 00:00:00  | - | -  |  -  | --- |
+| Usuário 5	| -	anos| --- | 00:00:00 | -  | - |  - | --- |
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+**CT 02 - Logar no aplicativo**
+| **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Usuário 1	| - anos	| ---| 00:00:00 | - | - | - | --- |
+| Usuário 2 | - anos| ---| 00:00:00  | -  | - | -  |--- |
+| Usuário 3	| -	anos| ---	| 00:00:00  | -  | - |  - | --- |
+| Usuário 4	| - anos| ---	| 00:00:00  | - | -  |  -  | --- |
+| Usuário 5	| -	anos| --- | 00:00:00 | -  | - |  - | --- |
+
+**CT 03 - Solicitação de medicamentos**
+| **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Usuário 1	| - anos	| ---| 00:00:00 | - | - | - | --- |
+| Usuário 2 | - anos| ---| 00:00:00  | -  | - | -  |--- |
+| Usuário 3	| -	anos| ---	| 00:00:00  | -  | - |  - | --- |
+| Usuário 4	| - anos| ---	| 00:00:00  | - | -  |  -  | --- |
+| Usuário 5	| -	anos| --- | 00:00:00 | -  | - |  - | --- |
+
+**CT 04 - Atualização do status do pedido**
+| **Usuário** 	| **Idade** | **Artefato** 	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- 	| --- 	| --- | ---  | --- | --- | --- |
+| Usuário 1	| - anos	| ---| 00:00:00 | - | - | - | --- |
+| Usuário 2 | - anos| ---| 00:00:00  | -  | - | -  |--- |
+| Usuário 3	| -	anos| ---	| 00:00:00  | -  | - |  - | --- |
+| Usuário 4	| - anos| ---	| 00:00:00  | - | -  |  -  | --- |
+| Usuário 5	| -	anos| --- | 00:00:00 | -  | - |  - | --- |
+
+
+
