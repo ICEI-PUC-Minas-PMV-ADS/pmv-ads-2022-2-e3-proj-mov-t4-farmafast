@@ -2,7 +2,49 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
+| Testes 	| CT 01 – Cadastro do usuário |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 02 – Cadastro da farmácia |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 03 – Efetuar login do usuário |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 04 – Efetuar login da farmácia |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 05 – Recuperação de senha |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 06 – Solicitação do medicamento |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 07 – Status de solicitação |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 08 – Feedback do atendimento |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 09 – Novas solicitações na farmácia |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 10 – Atualização do status |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
+
+| Testes 	| CT 11 – Horário de funcionamento da farmácia |
+|:---:	|:---:	|
+~ link do vídeo ou imagem aqui ~
 
 ## Avaliação
 
