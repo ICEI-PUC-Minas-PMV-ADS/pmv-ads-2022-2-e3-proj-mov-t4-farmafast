@@ -12,7 +12,7 @@ Os atributos do projeto foram desenvolvidos a partir das plataformas GitHub e Fi
 | Repositório de código fonte | GitHub |    |
 | Documentos do projeto | Figma | https://www.figma.com/file/rVLXxMyInok3LcmbIebwC2/Untitled?node-id=0%3A1 |
 | Gerenciamento de Projeto | Kanban, Gantt | |
-| Comunicação e Reuniões | Teams, Discord, WhatsApp | - |
+| Comunicação e Reuniões | Teams, Discord, | - |
 
 ## Controle de Versão
 
