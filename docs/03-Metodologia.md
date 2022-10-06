@@ -7,12 +7,12 @@ A metodologia contempla as ferramentas utilizadas pela manutenção dos recursos
 
 Os atributos do projeto foram desenvolvidos a partir das plataformas GitHub e Figma, e a relação dos ambientes está apresentada na tabela abaixo. 
 
-| Ambiente | Plataforma | Link de Acesso |
---------- | ---------- |  -------------  |
-| Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast |
-| Documentos do projeto | Figma | https://www.figma.com/file/rVLXxMyInok3LcmbIebwC2/Untitled?node-id=0%3A1 |
-| Gerenciamento de Projeto | Kanban, Gantt | https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1349321_sga_pucminas_br/EbLW4-6kP0hDuhLmzo9n_2UBkS2UfUH7uqSUSkS3VEvM9Q?e=emiwkW  |
-| Comunicação e Reuniões | Teams, Discord, WhatsApp |
+| Ambiente | Plataforma | 
+--------- | ---------- |  
+| Repositório de código fonte | [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast) |
+| Documentos do projeto | [Figma](https://www.figma.com/file/rVLXxMyInok3LcmbIebwC2/Untitled?node-id=0%3A1) |
+| Gerenciamento de Projeto | [Trello](https://trello.com/b/XMfxlqCf/quadro-kanban), [Gantt](https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1349321_sga_pucminas_br/EbLW4-6kP0hDuhLmzo9n_2UBkS2UfUH7uqSUSkS3VEvM9Q?e=emiwkW)  |
+| Comunicação e Reuniões | [Teams](https://teams.microsoft.com/_), [Discord](https://discord.com/), [WhatsApp](https://web.whatsapp.com/) |
 
 ## Controle de Versão
 De acordo com Vietro (2015), é importante observar o uso de técnicas e metodologias para o desenvolvimento de sistemas, buscando melhorar as práticas atuais. Diante disso torna-se essencial o gerenciamento do software, e isso envolve administrar as várias etapas do processo, como, por exemplo: requisitos do sistema, arquitetura do software, padrões de codificação, gerência de configuração, deploy, entre outros.
@@ -33,11 +33,10 @@ O grupo decidiu por utilizar a metodologia Ágil, sendo escolhido o Scrum como b
 Apresente a divisão de papéis entre os membros do grupo.
 A organização da equipe está apresentada conforme abaixo:
 
-a) Scrum Master
-
+a) Scrum Master:
 Vitória Gabriella Maffei Corrêa Rocha
 
-b) Product Owner 
+b) Product Owner: 
 Mateus Curcino De Lima
 
 c) Equipe de Desenvolvimento
@@ -61,19 +60,27 @@ d) Equipe de Design
 Na organização e na distribuição das tarefas do projeto, o grupo utiliza o aplicativo de gerenciamento de projetos denominado Git Projects, onde o mesmo está estruturado com as seguintes listas:
 
 Documentação: sequência das tarefas referentes à documentação de contexto que serão trabalhadas pela equipe, conforme cronograma do curso.
+
 Product Backlog: local onde é adicionado as tarefas a serem trabalhadas pela equipe, assim como as tarefas que forem identificadas no andamento do projeto.
+
 To Do: representa o Sprint Backlog atual que está sendo trabalhado.
+
 In Progress: tarefas que foram iniciadas são adicionadas nessa lista.
+
 Test (CQ - Checagem de Qualidade): lista das tarefas que foram concluídas. Nesse estágio cabe-se ainda uma revisão para verificar a qualidade.
+
 Done: nesta lista são adicionadas as tarefas que passaram pela Checagem de Qualidade e estão prontas para serem enviadas e/ou entregues.
+
 Locked: lista onde será relacionado e especificado o que está impedindo a conclusão da tarefa, juntamente com um comentário sobre o que está travando a tarefa.
+
 O quadro gerenciado pelo grupo no aplicativo Trello está disponível através da URL especificada no Quadro 7 e é apresentado, em seu estado atual, congênere figura abaixo. A caracterização da estrutura montada se fundamentou no artigo escrito por Littlefield (2016), assim como nos conceitos de Scrum de Schwaber e Sutherland (2020).
 
 Fonte: Trello - Elaborado pelos autores
 
-Para visualizá-lo adequadamente torna-se necessário se direcionar para a aba Projects, ou através do link [anexar].
+Para visualizá-lo adequadamente torna-se necessário se direcionar para o [Trello](https://trello.com/b/XMfxlqCf/quadro-kanban).
 
-Figura 7 - Tela do Trello para Gerenciamento do Projeto [anexar]
+Figura 7 - Tela do Trello para Gerenciamento do Projeto.
+<img src="./img/printTrello.png">
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
@@ -87,31 +94,32 @@ No que tange ao gerenciamento das Issues, optamos por adotar no projeto as etiqu
 
 A tarefas estão etiquetadas em função da natureza da atividade e seguem o esquema de cores/categorias conforme abaixo:
 
-Documentation
-Delivery
-Planning
-Invalid
-Help Wanted
-Code Review
+<img src="./img/printEtiquetas.png">
+
 Fonte: Elaborado pelos Autores
 
 ## Ferramentas
 As ferramentas aplicadas no projeto são:
 
-a) Editor de código:
+### Editor de código:
 
-Visual Studio Code e Expo.
+[VSCode](https://code.visualstudio.com/updates/v1_71) e [Expo](https://expo.dev/).
 Possuem integração com o Git, sendo possível realizar commits do GitHub para o Visual Studio Code.
-b) Ferramentas de Comunicação:
+
+### Ferramentas de Comunicação:
 
 WhatsApp, Discord, Microsoft Teams, Trello.
+
 São ferramentas completas e úteis para a gestão da equipe, viabilizando as chamadas de vídeo, de áudio e/ou por chat, seja pelo computador ou pelo smartphone.
 
-c) Ferramentas para Criação de Diagramas:
+### Ferramentas para Criação de Diagramas:
 
-Lucidchart.
+[Lucidchart](https://www.lucidchart.com/pages/pt/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_pt_allcountries_mixed_search_brand_exact_&km_CPC_CampaignId=1500131167&km_CPC_AdGroupID=59412157138&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=294337318298&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=9101004&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQjw-fmZBhDtARIsAH6H8qhfP7cQILBiBPfE2us4B0YQ6d-SYWJGw75BCX_7OYAxCkHE8q5yHmsaAnVIEALw_wcB).
+
 Possui acesso gratuito e de fácil interação, sendo possível criar diagramas conforme a necessidade do projeto, assim como a edição colaborativa pela equipe.
-d) Ferramentas de Desenho de Tela (Wireframing):
 
-Figma.
+### Ferramentas de Desenho de Tela (Wireframing):
+
+[Figma](https://www.figma.com/).
+
 Possui acesso gratuito e de fácil interação, sendo possível criar wireframes conforme a necessidade do projeto, assim como a edição colaborativa pela equipe.
