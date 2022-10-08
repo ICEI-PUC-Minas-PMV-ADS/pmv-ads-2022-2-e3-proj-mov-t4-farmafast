@@ -51,7 +51,9 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 Com os indicadores de desempenho constituímos o conjunto de medidas da empresa, onde avaliamos a performance ao longo do tempo.
  
 
-![Indicadores de Desempenho](img/Indicadores.png)  
+![Indicadores de Desempenho](img/Indicadores.png) 
+
+
  
 
 ## Requisitos
