@@ -52,7 +52,13 @@ Com os indicadores de desempenho constituímos o conjunto de medidas da empresa,
  
 
 ![Indicadores de Desempenho](img/Indicadores.png) 
-![Graficos de Desempenho](img/1_cadastros_realizados.png)
+![Cadastro Realizados](img/1_cadastros_realizados.png)
+![Acesso Plataforma](img/2_acesso_plataforma.png)
+![Entrega de Material](img/3_entrega_material.png)
+![Cancelamento de Solicitacoes](img/4_cancelamento_solicitacao.png)
+![ Requisicoes Abertas](img/5_requisicoes_abertas.png)
+![Reclamacoes](img/6_reclamacoes.png)
+![Remedios distribuidos](img/7_remedios_distribuidos.png)
 
 
  
