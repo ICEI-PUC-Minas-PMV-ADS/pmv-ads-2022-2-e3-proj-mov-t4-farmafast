@@ -51,8 +51,8 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 Com os indicadores de desempenho constituímos o conjunto de medidas da empresa, onde avaliamos a performance ao longo do tempo.
  
 
-![Indicadores de Desempenho](img/Indicadores.png) https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/34b4b26f4654808a6369973d27b80336396e7c62/docs/img/1_cadastros_realizados.png
-
+![Indicadores de Desempenho](img/Indicadores.png) 
+docs\img\1_cadastros_realizados.png
 
  
 
