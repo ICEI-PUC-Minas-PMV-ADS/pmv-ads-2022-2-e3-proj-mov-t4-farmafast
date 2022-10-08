@@ -52,7 +52,8 @@ Com os indicadores de desempenho constituímos o conjunto de medidas da empresa,
  
 
 ![Indicadores de Desempenho](img/Indicadores.png) 
-docs\img\1_cadastros_realizados.png
+![Graficos de Desempenho](img/1_cadastros_realizados.png)
+
 
  
 
