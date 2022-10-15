@@ -1,55 +1,69 @@
-import React from 'react';
-import { View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity } from 'react-native';
+import React, {useEffect, useState }from 'react';
+import { View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
 import * as Animatable from 'react-native-animatable'
-
-export default function SignInU() {
-    return (
-
+import { useNavigation } from '@react-navigation/native'
+ 
+ 
+export default function LoginFarmacia() {
+ 
+    const [display, setDisplay]=useState('none');
+ 
+    <View>
+        <Text style={styles.login__msg(display)}>Cnpj ou senha inválidos!</Text>
+    </View>
+   
+ 
+  return (
+ 
+    <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
         <View style={styles.container}>
         <View style={styles.containerLogo}>
         <Image
-            source={require('../../assets/logoCircle.png')}
+            source={require('../assets/img/logoCircle.png')}
             style={{width:'60%'}}
             resizeMode='contain'
         />
-    </View>
-    
+         </View>
+     
+   
         <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
-
-        <Text style={styles.title}>CPF</Text>
+ 
+        <Text style={styles.title}>CNPJ</Text>
         <TextInput
         style={styles.input}
-        placeholder="000.000.000-00"
+        placeholder="00.000.000/0000-00"
+        keyboardType='numeric'
         />
-
+ 
         <Text style={styles.title}>Senha</Text>
         <TextInput
             style={styles.input}
             secureTextEntry={true}
             placeholder="Digite sua senha"
         />
-
-
-            <TouchableOpacity style={styles.button}>
+ 
+ 
+            <TouchableOpacity style={styles.button} onPress={()=>setDisplay('flex')}>
                 <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
-
+ 
             <TouchableOpacity style={styles.buttonRegister}>
                 <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
-
+ 
             <TouchableOpacity style={styles.buttonForgot}>
                 <Text style={styles.forgotText}>Esqueci minha senha</Text>
             </TouchableOpacity>
-
-    
+ 
+   
 </Animatable.View>
-
+ 
 </View>
+</KeyboardAvoidingView>
  
 )
 }
-
+ 
      const styles = StyleSheet.create({
         container:{
             flex:1,
@@ -73,6 +87,14 @@ export default function SignInU() {
           marginTop:5,
           marginLeft:'10%',
         },
+        loginMsg:(text='none')=>({
+            fontWeight:'bold',
+            fontSize:22,
+            color:'#e0e1e6',
+            marginTop:10,
+            marginBottom:15,
+            display:'text'
+        }),
         input:{
             marginTop: 5,
             marginLeft:'10%',
@@ -115,5 +137,16 @@ export default function SignInU() {
         color:'#e0e1e6',
            fontSize:15,
            fontWeight:'bold'
+        },
+        login__msg:(text='none')=>({
+            fontWeight:"bold",
+            fontSize: 22,
+            color:"red",
+            marginBottom: 15,
+            display: text
         }
-    })
+        ),
+     }
+ 
+     )
+
