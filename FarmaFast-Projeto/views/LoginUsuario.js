@@ -44,7 +44,7 @@ export default function LoginUsuario({navigation}) {
                 <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
  
-            <TouchableOpacity style={styles.buttonRegister} onPress={ () => navigation.navigate('RegisterPharma')}>
+            <TouchableOpacity style={styles.buttonRegister} onPress={ () => navigation.navigate('RegisterUser')}>
                 <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
  
