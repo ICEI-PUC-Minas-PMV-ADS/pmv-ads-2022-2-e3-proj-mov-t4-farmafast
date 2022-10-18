@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, Keyb
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native'
  
-export default function LoginUsuario() {
+export default function LoginUsuario({navigation}) {
  
     const [display, setDisplay]=useState('none');
  

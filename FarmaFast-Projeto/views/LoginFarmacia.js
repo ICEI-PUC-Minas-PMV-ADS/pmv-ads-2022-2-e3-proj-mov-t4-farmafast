@@ -3,13 +3,12 @@ import { View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, Keyb
 import * as Animatable from 'react-native-animatable'
 import { useNavigation } from '@react-navigation/native'
  
- 
-export default function LoginFarmacia() {
+export default function LoginFarmacia({navigation}) {
  
     const [display, setDisplay]=useState('none');
  
     <View>
-        <Text style={styles.login__msg(display)}>Cnpj ou senha inválidos!</Text>
+        <Text style={styles.login__msg(display)}>CNPJ ou senha inválidos!</Text>
     </View>
    
  
@@ -21,8 +20,7 @@ export default function LoginFarmacia() {
         <Image
             source={require('../assets/img/logoCircle.png')}
             style={{width:'60%'}}
-            resizeMode='contain'
-        />
+            resizeMode='contain'/>
          </View>
      
    
@@ -32,22 +30,20 @@ export default function LoginFarmacia() {
         <TextInput
         style={styles.input}
         placeholder="00.000.000/0000-00"
-        keyboardType='numeric'
-        />
+        keyboardType='numeric'/>
  
         <Text style={styles.title}>Senha</Text>
         <TextInput
             style={styles.input}
             secureTextEntry={true}
-            placeholder="Digite sua senha"
-        />
+            placeholder="Digite sua senha"/>
  
  
             <TouchableOpacity style={styles.button} onPress={()=>setDisplay('flex')}>
                 <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
  
-            <TouchableOpacity style={styles.buttonRegister}>
+            <TouchableOpacity style={styles.buttonRegister} onPress={ () => navigation.navigate('RegisterPharma')}>
                 <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
  
