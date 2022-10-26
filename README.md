@@ -16,7 +16,7 @@ Este projeto trata-se do desenvolvimento de uma aplicação funcional, que  auxi
 * Fábio Furlan
 * Isabella Carolina de Almeida Siqueira Damião
 * Julia Mendes Lima da Cunha
-* Vitória Gabriella Maffei Corrêa
+* Vitória Gabriella Maffei Corrêa Rocha
 
 ## Orientador
 
