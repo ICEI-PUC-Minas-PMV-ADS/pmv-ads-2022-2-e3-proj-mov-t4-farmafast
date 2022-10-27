@@ -13,15 +13,15 @@ export default function LoginUsuario({navigation}) {
    
     return (
  
-    <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
-        <View style={styles.container}>
+<KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
+    <View style={styles.container}>
         <View style={styles.containerLogo}>
         <Image
             source={require('../assets/img/logoCircle.png')}
             style={{width:'60%'}}
             resizeMode='contain'
         />
-    </View>
+        </View>
    
         <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
  
@@ -48,12 +48,12 @@ export default function LoginUsuario({navigation}) {
                 <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
  
-            <TouchableOpacity style={styles.buttonForgot}>
+            <TouchableOpacity style={styles.buttonForgot} onPress={ () => navigation.navigate('ForgotPasswordUser')}  >
                 <Text style={styles.forgotText}>Esqueci minha senha</Text>
             </TouchableOpacity>
  
    
-    </Animatable.View>
+        </Animatable.View>
  
     </View>
 </KeyboardAvoidingView>
