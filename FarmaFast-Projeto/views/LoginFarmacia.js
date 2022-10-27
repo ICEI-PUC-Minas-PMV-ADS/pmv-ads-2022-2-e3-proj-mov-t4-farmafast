@@ -47,7 +47,7 @@ export default function LoginFarmacia({navigation}) {
                 <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
  
-            <TouchableOpacity style={styles.buttonForgot}>
+            <TouchableOpacity style={styles.buttonForgot}  onPress={ () => navigation.navigate('ForgotPasswordPharma')} >
                 <Text style={styles.forgotText}>Esqueci minha senha</Text>
             </TouchableOpacity>
  
