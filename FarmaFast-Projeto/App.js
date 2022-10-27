@@ -6,9 +6,9 @@ import {ForgotPasswordPharma, ForgotPasswordUser, HomePage, LoginFarmacia, Login
  
  
 export default function App() {
- 
+
   const Stack = createNativeStackNavigator();
- 
+
   return (
       <NavigationContainer>
         <Stack.Navigator>
@@ -24,4 +24,4 @@ export default function App() {
       </NavigationContainer>
   );
 }
- 
+
