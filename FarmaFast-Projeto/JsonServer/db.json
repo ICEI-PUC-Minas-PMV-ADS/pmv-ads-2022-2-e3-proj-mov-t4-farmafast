@@ -1,0 +1,33 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "vitoria",
+      "cpf": "1233434345",
+      "dtbirth": "14/12/1995",
+      "password": "1234",
+      "repeatpassword": "1234"
+    },
+    {
+      "id": 22,
+      "name": "Vote Bolsonaro"
+    }
+  ],
+  "companies": [
+    {
+      "id": 2,
+      "name": "UltraFarma34",
+      "cnpj": "1542656546554",
+      "password": "56789",
+      "repeatpassword": "56789"
+    }
+  ],
+  "order": [
+    {
+      "id": "",
+      "products": "product 1;product 2;product 3;product 4",
+      "requesterId": 22,
+      "companieId": 2030
+    }
+  ]
+}

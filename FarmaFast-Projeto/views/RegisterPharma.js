@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native'
 
 
 export default function RegisterPharma({ navigation }) {
+        const [setDisplay] = useState('none');
         return (
 
                 <View style={styles.container}>

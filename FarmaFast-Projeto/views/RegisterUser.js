@@ -3,8 +3,6 @@ import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'reac
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
 import PeopleService from './../Services/peopleService';
-import companiesService from './../Services/companiesService';
-// import pedidosService from './../'
 
 export default function RegisterUser({ navigation }) {
     return (
@@ -48,8 +46,8 @@ export default function RegisterUser({ navigation }) {
                     secureTextEntry={true}
                     placeholder="Repita sua senha" />
 
-                <TouchableOpacity style={styles.button} onPress={() => setDisplay('flex')}>
-                    <Text style={styles.buttonText} onclick={PeopleService.post()}>Cadastrar</Text>
+                <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText} onclik={(new PeopleService).post()}>Cadastrar</Text>
                 </TouchableOpacity>
 
 
