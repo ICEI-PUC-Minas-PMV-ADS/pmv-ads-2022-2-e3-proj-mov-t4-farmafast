@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Platform, View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
+import { TextInputMask } from "react-native-masked-text";
 
 export default function LoginUsuario({ navigation }) {
 
     const [display, setDisplay] = useState('none');
+    const [cpf, setCpf] = useState('');
 
     <View>
         <Text style={styles.login__msg(display)}>CPF ou senha inválidos!</Text>
@@ -25,11 +27,14 @@ export default function LoginUsuario({ navigation }) {
 
                 <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
 
+
                     <Text style={styles.title}>CPF</Text>
-                    <TextInput
-                        style={styles.input}
+                    <TextInputMask style={styles.input}
+                        type={'cpf'}
                         placeholder="000.000.000-00"
                         keyboardType='numeric'
+                        value={cpf}
+                        onChangeText={text => setCpf(text)}
                     />
 
                     <Text style={styles.title}>Senha</Text>
@@ -139,4 +144,3 @@ const styles = StyleSheet.create({
     }
     ),
 })
-

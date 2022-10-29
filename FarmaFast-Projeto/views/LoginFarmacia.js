@@ -1,11 +1,14 @@
+
 import React, { useEffect, useState } from 'react';
 import { Platform, View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
+import { TextInputMask } from "react-native-masked-text";
 
 export default function LoginFarmacia({ navigation }) {
 
     const [display, setDisplay] = useState('none');
+    const [cnpj, setCnpj] = useState('');
 
     <View>
         <Text style={styles.login__msg(display)}>CNPJ ou senha inválidos!</Text>
@@ -27,10 +30,13 @@ export default function LoginFarmacia({ navigation }) {
                 <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
 
                     <Text style={styles.title}>CNPJ</Text>
-                    <TextInput
-                        style={styles.input}
+                    <TextInputMask style={styles.input}
+                        type={'cnpj'}
                         placeholder="00.000.000/0000-00"
-                        keyboardType='numeric' />
+                        keyboardType='numeric'
+                        value={cnpj}
+                        onChangeText={text => setCnpj(text)}
+                    />
 
                     <Text style={styles.title}>Senha</Text>
                     <TextInput
@@ -145,4 +151,3 @@ const styles = StyleSheet.create({
 }
 
 )
-

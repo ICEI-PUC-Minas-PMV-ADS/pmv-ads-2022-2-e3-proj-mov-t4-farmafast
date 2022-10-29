@@ -1,11 +1,14 @@
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
-import React from 'react'
 import * as Animatable from 'react-native-animatable'
-import { useNavigation } from '@react-navigation/native'
+
+import React, { useState } from 'react';
+import { TextInputMask } from "react-native-masked-text";
 
 
 export default function RegisterPharma({ navigation }) {
         const [setDisplay] = useState('none');
+        const [cnpj, setCnpj] = useState('');
+
         return (
 
                 <View style={styles.container}>
@@ -24,10 +27,12 @@ export default function RegisterPharma({ navigation }) {
                                         placeholder="Digite o nome da farmácia" />
 
                                 <Text style={styles.title}>CNPJ</Text>
-                                <TextInput
-                                        style={styles.input}
+                                <TextInputMask style={styles.input}
+                                        type={'cnpj'}
                                         placeholder="00.000.000/0000-00"
-                                        keyboardType='numeric' />
+                                        keyboardType='numeric'
+                                        value={cnpj}
+                                        onChangeText={text => setCnpj(text)} />
 
                                 <Text style={styles.title}>Senha</Text>
                                 <TextInput
