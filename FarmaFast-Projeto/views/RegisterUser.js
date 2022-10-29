@@ -1,8 +1,10 @@
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
-import React from 'react'
-import * as Animatable from 'react-native-animatable'
-import { useNavigation } from '@react-navigation/native'
-
+import React from 'react';
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import { useNavigation } from '@react-navigation/native';
+import PeopleService from './../Services/peopleService';
+import companiesService from './../Services/companiesService';
+// import pedidosService from './../'
 
 export default function RegisterUser({ navigation }) {
     return (
@@ -47,7 +49,7 @@ export default function RegisterUser({ navigation }) {
                     placeholder="Repita sua senha" />
 
                 <TouchableOpacity style={styles.button} onPress={() => setDisplay('flex')}>
-                    <Text style={styles.buttonText}>Cadastrar</Text>
+                    <Text style={styles.buttonText} onclick={PeopleService.post()}>Cadastrar</Text>
                 </TouchableOpacity>
 
 

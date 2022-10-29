@@ -4,4 +4,4 @@ import LoginFarmacia from './LoginFarmacia';
 import RegisterPharma from './RegisterPharma';
 import RegisterUser from './RegisterUser';
 
-export {Inicial, LoginFarmacia, LoginUsuario, RegisterPharma, RegisterUser}
+export { Inicial, LoginFarmacia, LoginUsuario, RegisterPharma, RegisterUser }
