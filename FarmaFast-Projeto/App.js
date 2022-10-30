@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text, View, Button, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {RedefinedPasswordPharma, RedefinedPasswordUser, Inicial, LoginFarmacia, LoginUsuario, RegisterPharma,RegisterUser, UpdateStatus} from './views/importsTelas'

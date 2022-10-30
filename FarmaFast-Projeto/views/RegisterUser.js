@@ -1,12 +1,29 @@
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
-import React from 'react'
-import * as Animatable from 'react-native-animatable'
-import { useNavigation } from '@react-navigation/native'
-
+import React from 'react';
+import { Button, View, Text, TouchableOpacity, StyleSheet, Image, TextInput } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import { Formik, Field, FastField, Form } from 'formik';
+import PeopleService from './../Services/peopleService';
 
 export default function RegisterUser({ navigation }) {
-    return (
+    function onSubmit(values, actions) {
+        if (values !== undefined) {
+            // console.info('SUBMIT', values);
 
+            if (values.password != values.passwordconfirm)
+                return "Ops! The passwords isn't matching.";
+
+            let service = new PeopleService();
+            var data = {
+                "name": values.name,
+                "cpf": values.cpf,
+                "birthdate": values.birthdate,
+                "password": values.password
+            }
+            service.Save(data);
+        }
+
+    };
+    return (
         <View style={styles.container}>
             <View style={styles.containerLogo}>
                 <Image
@@ -14,47 +31,72 @@ export default function RegisterUser({ navigation }) {
                     style={{ width: '60%' }}
                     resizeMode='contain' />
             </View>
-
             <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
+                <Formik
+                    onSubmit={onSubmit}
+                    initialValues={{ name: '', cpf: '', password: '', passwordconfirm: '', birthdate: '' }}
+                    render={({ values }) => (
+                        <Form>
+                            <Text style={styles.title}>Nome Completo</Text>
+                            <Field
+                                style={styles.input}
+                                placeholder="Digite o seu nome completo"
+                                name="name"
+                                type="text"
+                            />
 
-                <Text style={styles.title}>Nome Completo</Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Digite o seu nome completo" />
+                            <Text style={styles.title}>CPF</Text>
+                            <Field style={styles.input}
+                                // type={'cpf'}
+                                placeholder="000.000.000-00"
+                                // keyboardType='numeric'
+                                name="cpf"
+                                type="text"
+                            // onFocusOut={text => setCpf(text)}                            
+                            />
 
-                <Text style={styles.title}>CPF</Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="000.000.000-00"
-                    keyboardType='numeric' />
+                            <Text style={styles.title}>Data de nascimento</Text>
+                            <Field
+                                style={styles.input}
+                                placeholder="00/00/0000"
+                                // keyboardType='numeric'
+                                name="birthdate"
+                                type="date"
+                            // onFocusOut={text => setDate(text)}
+                            />
 
-                <Text style={styles.title}>Data de nascimento</Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="00/00/0000"
-                    keyboardType='numeric' />
+                            <Text style={styles.title}>Senha</Text>
+                            <Field
+                                style={styles.input}
+                                // secureTextEntry={true}
+                                placeholder="Digite sua senha"
+                                name="password"
+                                type="password"
+                            />
 
-                <Text style={styles.title}>Senha</Text>
-                <TextInput
-                    style={styles.input}
-                    secureTextEntry={true}
-                    placeholder="Digite sua senha" />
+                            <Text style={styles.title}>Confirme sua senha</Text>
+                            <Field
+                                style={styles.input}
+                                // secureTextEntry={true}
+                                placeholder="Repita sua senha"
+                                name="passwordconfirm"
+                                type="password"
+                            />
 
-                <Text style={styles.title}>Confirme sua senha</Text>
-                <TextInput
-                    style={styles.input}
-                    secureTextEntry={true}
-                    placeholder="Repita sua senha" />
-
-                <TouchableOpacity style={styles.button} onPress={() => setDisplay('flex')}>
-                    <Text style={styles.buttonText}>Cadastrar</Text>
-                </TouchableOpacity>
-
-
+                            <TouchableOpacity style={styles.button1}>
+                                <button type="submit" title="Cadastrar" value="Cadastrar">
+                                    Cadastrar
+                                </button>
+                            </TouchableOpacity>
+                        </Form>
+                    )}
+                />
             </Animatable.View>
-        </View>
-    )
-}
+        </View >
+    );
+};
+
+
 
 const styles = StyleSheet.create({
     container: {
@@ -94,6 +136,17 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginTop: 15,
     },
+    button1: {
+        backgroundColor: '#4eabe4',
+        width: '40%',
+        height: '20px',
+        alignItems: 'center',
+        borderRadius: 4,
+        marginLeft: '10%',
+        paddingVertical: 10,
+        justifyContent: 'center',
+        marginTop: 15,
+    },
     buttonText: {
         color: '#fff',
         fontSize: 18,
@@ -107,5 +160,5 @@ const styles = StyleSheet.create({
     },
 
 
-}
-)
+});
+
