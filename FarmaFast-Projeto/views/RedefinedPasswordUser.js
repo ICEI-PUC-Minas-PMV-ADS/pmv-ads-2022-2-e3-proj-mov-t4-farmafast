@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
   StyleSheet,
   Alert,
-  Image,
   TextInput,
   TouchableOpacity,
   KeyboardAvoidingView,
@@ -12,20 +11,20 @@ import {
 import * as Animatable from "react-native-animatable";
 import { useNavigation } from "@react-navigation/native";
 
-export default function ForgotPasswordPharma({ navigation }) {
+export default function RedefinedPasswordPharma({ navigation }) {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS == "ios" ? "padding" : "height"}
       style={[styles.container]}
     >
       <View style={styles.container}>
-        <TouchableOpacity onPress={() => navigation.navigate("LoginFarmacia")}>
+        <TouchableOpacity onPress={() => navigation.navigate("LoginUsuario")}>
           <Text style={styles.backText}>Voltar</Text>
         </TouchableOpacity>
         <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
-          <Text style={styles.titleCnpj}>CNPJ</Text>
+          <Text style={styles.titleCpf}>CPF</Text>
           <TextInput
-            style={styles.inputCnpj}
+            style={styles.inputCpf}
             placeholder="000.000.000-00"
             keyboardType="numeric"
           />
@@ -41,7 +40,7 @@ export default function ForgotPasswordPharma({ navigation }) {
             style={styles.button}
             onPress={() => setDisplay("flex")}
           >
-            <Text style={styles.buttonText}>Trocar senha</Text>
+            <Text style={styles.buttonText}>Redefinir senha</Text>
           </TouchableOpacity>
         </Animatable.View>
       </View>
@@ -67,12 +66,12 @@ const styles = StyleSheet.create({
     paddingStart: "10%",
     paddingEnd: "5%",
   },
-  titleCnpj: {
+  titleCpf: {
     fontSize: 20,
     marginTop: "50%",
     marginLeft: "10%",
   },
-  inputCnpj: {
+  inputCpf: {
     marginTop: 5,
     marginLeft: "10%",
     padding: 15,
