@@ -52,8 +52,8 @@ export default function LoginUsuario({ navigation }) {
                         <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonForgot}>
-                        <Text style={styles.forgotText}>Esqueci minha senha</Text>
+                    <TouchableOpacity style={styles.buttonForgot}  onPress={() => navigation.navigate('RedefinedPasswordUser')}>
+                        <Text style={styles.forgotText}>Redefinir senha</Text>
                     </TouchableOpacity>
 
 
