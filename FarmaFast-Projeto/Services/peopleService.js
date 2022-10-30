@@ -32,37 +32,14 @@ class PeopleService {
             });
     };
 
-    Update() {
-
-        api.put(('people', (req, res) => {
-            const { id } = req.params
-
-            const { name, cpf, dtbirth, password, repeatpassword, perfil } = req.body
-
-            const currentContent = readFile()
-            const selectedItem = currentContent.findIndex((item) => item.id === id)
-
-            const { id: cId, name: cName, cpf: cCpf, dtbirth: cDtbirth, password: cPassword, repeatpassword: cRepeatpassword, perfil: cPerfil } = currentContent[selectedItem]
-
-            const newObject = {
-                id: cId,
-                name: name ? name : cName,
-                cpf: cpf ? cpf : cCpf,
-                dtbirth: dtbirth ? dtbirth : cDtbirth,
-                password: password ? password : cPassword,
-                repeatpassword: repeatpassword ? repeatpassword : cRepeatpassword,
-                perfil: perfil ? perfil : cPerfil
-            }
-
-            currentContent[selectedItem] = newObject
-            writeFile(currentContent)
-
-            res.send(newObject)
-        })).then(res => console.log(res));
+    Update(id) {
+        api.put('people' + id, { data })
+            .then(res => this.setState({ UpdateAt: response.data.UpdateAt }));
     };
 
+
     Remove() {
-        api.delete(('people/:id', (req, res) => {
+        api.delete(('people' + id, (req, res) => {
             const { id } = req.params
             const currentContent = readFile()
             const selectedItem = currentContent.findIndex((item) => item.id === id)
