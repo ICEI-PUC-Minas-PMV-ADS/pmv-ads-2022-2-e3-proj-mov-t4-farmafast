@@ -1,13 +1,28 @@
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
-import * as Animatable from 'react-native-animatable'
-import React, { useState } from 'react';
-import { TextInputMask } from "react-native-masked-text";
+import React from 'react';
+import { Button, View, Text, TouchableOpacity, StyleSheet, Image, TextInput } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import { Formik, Field, FastField, Form } from 'formik';
+import companiesService from './../Services/companiesService';
 
 
 export default function RegisterPharma({ navigation }) {
-        const [setDisplay] = useState('none');
-        const [cnpj, setCnpj] = useState('');
-
+        function onSubmit(values, actions) {
+                if (values !== undefined) {
+                    // console.info('SUBMIT', values);
+        
+                    if (values.password != values.passwordconfirm)
+                        return "Ops! The passwords isn't matching.";
+        
+                    let service = new companiesService();
+                    var data = {
+                        "name": values.name,
+                        "cnpj": values.cnpj,
+                        "password": values.password
+                    }
+                    service.Save(data);
+                }
+        
+            };
         return (
 
                 <View style={styles.container}>
@@ -20,40 +35,60 @@ export default function RegisterPharma({ navigation }) {
 
                         <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
 
+                                <Formik
+                                onSubmit={onSubmit}
+                                initialValues={{ name: '', cpf: '', password: '', passwordconfirm: '' }}
+                                render={({ values }) => (
+                                <Form>
+
                                 <Text style={styles.title}>Nome</Text>
-                                <TextInput
+                                <Field
                                         style={styles.input}
-                                        placeholder="Digite o nome da farmácia" />
+                                        placeholder="Digite o nome da farmácia" 
+                                        name="name"
+                                        type="text"
+                                        />
 
                                 <Text style={styles.title}>CNPJ</Text>
-                                <TextInputMask style={styles.input}
-                                        type={'cnpj'}
+                                <Field style={styles.input}
+                                       // type={'cnpj'}
                                         placeholder="00.000.000/0000-00"
-                                        keyboardType='numeric'
-                                        value={cnpj}
-                                        onChangeText={text => setCnpj(text)} />
+                                        // keyboardType='numeric'
+                                        name="cnpj"
+                                        type="text"
+                                        //</Form>onChangeText={text => setCnpj(text)} 
+                                        />
 
                                 <Text style={styles.title}>Senha</Text>
-                                <TextInput
+                                <Field
                                         style={styles.input}
-                                        secureTextEntry={true}
-                                        placeholder="Digite sua senha" />
+                                        // secureTextEntry={true}
+                                        placeholder="Digite sua senha"
+                                        name="password"
+                                        type="password"
+                                        />
 
-                                <Text style={styles.title}>Confirme sua senha</Text>
-                                <TextInput
-                                        style={styles.input}
-                                        secureTextEntry={true}
-                                        placeholder="Repita sua senha" />
+                        <Text style={styles.title}>Confirme sua senha</Text>
+                            <Field
+                                style={styles.input}
+                                // secureTextEntry={true}
+                                placeholder="Repita sua senha"
+                                name="passwordconfirm"
+                                type="password"
+                            />
 
-                                <TouchableOpacity style={styles.button} onPress={() => setDisplay('flex')}>
-                                        <Text style={styles.buttonText}>Cadastrar</Text>
-                                </TouchableOpacity>
-
-
+                            <TouchableOpacity style={styles.button1}>
+                                <button type="submit" title="Cadastrar" value="Cadastrar">
+                                    Cadastrar
+                                </button>
+                            </TouchableOpacity>
+                            </Form>
+                    )}
+                />
                         </Animatable.View>
                 </View>
-        )
-}
+        );
+};
 
 const styles = StyleSheet.create({
         container: {
@@ -92,7 +127,18 @@ const styles = StyleSheet.create({
                 paddingVertical: 10,
                 justifyContent: 'center',
                 marginTop: 15,
-        },
+            },
+            button1: {
+                backgroundColor: '#4eabe4',
+                width: '40%',
+                height: '20px',
+                alignItems: 'center',
+                borderRadius: 4,
+                marginLeft: '10%',
+                paddingVertical: 10,
+                justifyContent: 'center',
+                marginTop: 15,
+            },
         buttonText: {
                 color: '#fff',
                 fontSize: 18,
@@ -106,5 +152,4 @@ const styles = StyleSheet.create({
         },
 
 
-}
-)
+});
