@@ -1,5 +1,4 @@
 'use strict';
-
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -10,8 +9,7 @@ class PeopleService {
     constructor() {
     }
 
-    //TODO: should be named as ListAll
-    get() {
+    ListAll() {
 
         api.get('/people', (req, res) => {
             const content = readFile()
@@ -19,25 +17,24 @@ class PeopleService {
         }).then(res => console.log(res));
     };
 
-    //TODO: should be named as Save()
-    post() {
-
-
-
-        api.post('/people', (req, res) => {
-            const { name, cpf, dtbirth, password, repeatpassword, perfil } = req.body
-            const currentContent = readFile()
-            const id = Math.random().toString(32).substring(2, 9)
-            currentContent.push({ id, name, cpf, dtbirth, password, repeatpassword, perfil })
-            writeFile(currentContent)
-            res.send({ id, name, cpf, dtbirth, password, repeatpassword, perfil })
+    ListById(id) {
+        api.get('/people/' + id, (req, res) => {
+            const content = readFile()
+            res.send(content)
         }).then(res => console.log(res));
+    };
 
+    Save(data) {
+        api.post('/people', data)
+            .then((response) => setUser(response.data))
+            .catch((err) => {
+                console.error("ops! ocorreu um erro" + err);
+            });
     };
 
     Update() {
 
-        api.put(('people/{id}', (req, res) => {
+        api.put(('people', (req, res) => {
             const { id } = req.params
 
             const { name, cpf, dtbirth, password, repeatpassword, perfil } = req.body
@@ -76,4 +73,4 @@ class PeopleService {
     }
 };
 
-export default PeopleService;
+export default PeopleService; 

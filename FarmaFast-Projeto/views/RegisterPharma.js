@@ -1,6 +1,5 @@
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
 import * as Animatable from 'react-native-animatable'
-
 import React, { useState } from 'react';
 import { TextInputMask } from "react-native-masked-text";
 

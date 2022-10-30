@@ -1,8 +1,6 @@
-
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Platform, View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import { useNavigation } from '@react-navigation/native';
 import { TextInputMask } from "react-native-masked-text";
 
 export default function LoginFarmacia({ navigation }) {

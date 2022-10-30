@@ -3,6 +3,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Inicial, LoginFarmacia, LoginUsuario, RegisterPharma, RegisterUser } from './views/importsTelas'
 
+
+
+
 export default function App() {
 
   const Stack = createNativeStackNavigator();
