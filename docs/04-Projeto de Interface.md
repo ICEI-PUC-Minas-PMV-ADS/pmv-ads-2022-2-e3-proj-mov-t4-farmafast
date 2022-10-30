@@ -39,7 +39,7 @@ Tela de cadastro do usuário e da farmácia.
 ![Tela - Cadastro Farmácia](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/cad%20-%20farmacia.png)
 ![Tela - Cadastro Usuário](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/cadastro%20-%20user.png)
 
-## Tela Esqueci minha senha
+## Tela Redefinir senha
 
 Nesta o usuário do App, seja ele um usuário comum ou uma farmácia, poderá redefinir sua senha.
 
