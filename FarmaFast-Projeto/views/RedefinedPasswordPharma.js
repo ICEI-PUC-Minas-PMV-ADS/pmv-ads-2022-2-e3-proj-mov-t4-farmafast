@@ -1,12 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-  KeyboardAvoidingView,
-} from "react-native";
+import React, { useEffect } from "react";
+import { Platform, View, Text, TouchableOpacity, TextInput, StyleSheet, Image, KeyboardAvoidingView} from 'react-native'
 import * as Animatable from "react-native-animatable";
 import { useNavigation } from "@react-navigation/native";
 

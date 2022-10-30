@@ -29,6 +29,13 @@
       "birthdate": "2022-10-30",
       "password": "123456",
       "id": 16
+    },
+    {
+      "name": "Arthur Victor De Paula",
+      "cpf": "146.718.036-07",
+      "birthdate": "2003-02-17",
+      "password": "123456789",
+      "id": 17
     }
   ],
   "companies": [
