@@ -44,7 +44,7 @@ export default function LoginUsuario({ navigation }) {
                     />
 
 
-                    <TouchableOpacity style={styles.button} onPress={() => setDisplay('flex')}>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
                         <Text style={styles.buttonText}>Entrar</Text>
                     </TouchableOpacity>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {RedefinedPasswordPharma, RedefinedPasswordUser, Inicial, LoginFarmacia, LoginUsuario, RegisterPharma,RegisterUser, UpdateStatus} from './views/importsTelas'
+import {RedefinedPasswordPharma, RedefinedPasswordUser, Inicial, LoginFarmacia, LoginUsuario, RegisterPharma,RegisterUser, UpdateStatus, InitialUser, InitialPharma, Solicitation, Feedback} from './views/importsTelas'
  
  
 export default function App() {
@@ -19,6 +19,10 @@ export default function App() {
           <Stack.Screen name="RedefinedPasswordUser" options={{headerShown: false}} component={RedefinedPasswordUser} />
           <Stack.Screen name="RedefinedPasswordPharma" options={{headerShown: false}} component={RedefinedPasswordPharma} />
           <Stack.Screen name="UpdateStatus" options={{headerShown: false}} component={UpdateStatus} />
+          <Stack.Screen name="InitialUser" options={{headerShown: false}} component={InitialUser} />
+          <Stack.Screen name="InitialPharma" options={{headerShown: false}} component={InitialPharma} />
+          <Stack.Screen name="Solicitation" options={{headerShown: false}} component={Solicitation} />
+          <Stack.Screen name="Feedback" options={{headerShown: false}} component={Feedback} />
         </Stack.Navigator>
       </NavigationContainer>
   );

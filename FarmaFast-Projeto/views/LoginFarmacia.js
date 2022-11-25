@@ -43,7 +43,7 @@ export default function LoginFarmacia({ navigation }) {
                         placeholder="Digite sua senha" />
 
 
-                    <TouchableOpacity style={styles.button} onPress={() => setDisplay('flex')}>
+                    <TouchableOpacity style={styles.button} onPress={() =>navigation.navigate('InitialPharma')}>
                         <Text style={styles.buttonText}>Entrar</Text>
                     </TouchableOpacity>
 
