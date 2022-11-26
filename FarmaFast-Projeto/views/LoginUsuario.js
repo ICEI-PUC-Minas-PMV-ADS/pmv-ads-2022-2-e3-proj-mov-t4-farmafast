@@ -1,70 +1,93 @@
 import React, { useState } from 'react';
-import { Platform, View, Text, StyleSheet, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
+import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { TextInputMask } from "react-native-masked-text";
+import { Formik, Field, FastField, Form, Alert, validate } from 'formik';
+import PeopleService from './../Services/peopleService';
 
 export default function LoginUsuario({ navigation }) {
+    function onSubmit(values, actions) {
+        if (values !== undefined) {
+            // console.info('SUBMIT', values);
 
-    const [display, setDisplay] = useState('none');
-    const [cpf, setCpf] = useState('');
+            if (values.cpf != values.cpf && values.password != values.password)
+                console.log("Ops! Invalid CPF or password");
 
-    <View>
-        <Text style={styles.login__msg(display)}>CPF ou senha inválidos!</Text>
-    </View>
+
+            let service = new PeopleService();
+            var data = {
+                "cpf": values.cpf,
+                "password": values.password
+            }
+            service.ListAll(data);
+        }
+        function validate(values) {
+            const errors = {};
+            if (!values.cpf) {
+                errors.cpf = "Oops! The CPF is mandatory."
+            }
+            if (!values.password) {
+                errors.password = "Oops! The password is mandatory."
+            }
+            return errors;
+
+        }
+    }
 
     return (
+        <View style={styles.container}>
+            <View style={styles.containerLogo}>
+                <Image
+                    source={require('../assets/img/logoCircle.png')}
+                    style={{ width: '60%' }}
+                    resizeMode='contain'
+                />
+            </View>
 
-        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
-            <View style={styles.container}>
-                <View style={styles.containerLogo}>
-                    <Image
-                        source={require('../assets/img/logoCircle.png')}
-                        style={{ width: '60%' }}
-                        resizeMode='contain'
-                    />
-                </View>
+            <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
+                <Formik
+                    onSubmit={onSubmit}
+                    initialValues={{ cpf: '', password: '' }}
+                    render={({ values, errors }) => (
+                        <Form>
+                            <Text style={styles.title}>CPF</Text>
+                            <Field style={styles.input}
+                                // type={'cpf'}
+                                placeholder="000.000.000-00"
+                                // keyboardType='numeric'
+                                name="cpf"
+                                type="text"
+                            // onFocusOut={text => setCpf(text)}                            
+                            />{errors.cpf}
 
-                <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
-
-
-                    <Text style={styles.title}>CPF</Text>
-                    <TextInputMask style={styles.input}
-                        type={'cpf'}
-                        placeholder="000.000.000-00"
-                        keyboardType='numeric'
-                        value={cpf}
-                        onChangeText={text => setCpf(text)}
-                    />
-
-                    <Text style={styles.title}>Senha</Text>
-                    <TextInput
-                        style={styles.input}
-                        secureTextEntry={true}
-                        placeholder="Digite sua senha"
-                    />
+                            <Text style={styles.title}>Senha</Text>
+                            <Field
+                                style={styles.input}
+                                // secureTextEntry={true}
+                                placeholder="Digite sua senha"
+                                name="password"
+                                type="password"
+                            />{errors.password}
 
 
                     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
                         <Text style={styles.buttonText}>Entrar</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
-                        <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
-                    </TouchableOpacity>
+                            <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
+                                <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
+                            </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonForgot}  onPress={() => navigation.navigate('RedefinedPasswordUser')}>
-                        <Text style={styles.forgotText}>Redefinir senha</Text>
-                    </TouchableOpacity>
-
-
-                </Animatable.View>
-
-            </View>
-        </KeyboardAvoidingView>
-
-
-    )
-}
+                            <TouchableOpacity style={styles.buttonForgot}>
+                                <Text style={styles.forgotText}>Esqueci minha senha</Text>
+                            </TouchableOpacity>
+                        </Form>
+                    )}
+                />
+            </Animatable.View>
+        </View >
+    );
+};
 const styles = StyleSheet.create({
     container: {
         flex: 1,

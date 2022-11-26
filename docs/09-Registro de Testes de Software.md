@@ -4,11 +4,11 @@
 
 | Testes 	| CT 01 – Cadastro do usuário |
 |:---:	|:---:	|
-~ link do vídeo ou imagem aqui ~
+~ [link do vídeo ou imagem aqui ](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/video%20user.mp4)~
 
 | Testes 	| CT 02 – Cadastro da farmácia |
 |:---:	|:---:	|
-~ link do vídeo ou imagem aqui ~
+~ [link do vídeo ou imagem aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/video%20farm.mp4) ~
 
 | Testes 	| CT 03 – Efetuar login do usuário |
 |:---:	|:---:	|
