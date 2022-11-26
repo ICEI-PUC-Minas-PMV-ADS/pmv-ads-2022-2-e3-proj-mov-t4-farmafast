@@ -5,5 +5,3 @@ import ContainerLogo from './components/ContainerLogo';
 
 export {Header, Container, ContainerLogo};
 
-
-export {Header, Container, ContainerLogo};
