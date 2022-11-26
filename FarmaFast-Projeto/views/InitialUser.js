@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Header, Container, ContainerLogo } from './importsComponents';
 
+
 function InitialUser({ navigation }) {
 
     return (
 
         <Container>
-            <Header />
+            <Header title={'Tela Inicial'} />
             <ContainerLogo />
 
             <View>
-
 
                 <Text style={styles.title}>Bem-vindo ao Farma Fast. Selecione uma das opções:</Text>
 
@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
     title: {
         textAlign: 'center',
         color: 'black',
-        fontWeight: 'bold',
         alignItems: 'center',
         fontSize: 14,
 

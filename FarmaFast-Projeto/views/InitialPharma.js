@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Button } from 'react-native-paper';
 import { Header, Container, ContainerLogo } from './importsComponents';
 
 function InitialPharma({ navigation }) {
@@ -8,7 +7,7 @@ function InitialPharma({ navigation }) {
     return (
 
         <Container>
-            <Header />
+            <Header title={'Tela Inicial'}/>
             <ContainerLogo />
 
             <View>
@@ -48,7 +47,6 @@ const styles = StyleSheet.create({
     title: {
         textAlign: 'center',
         color: 'black',
-        fontWeight: 'bold',
         alignItems: 'center',
         fontSize: 14,
 

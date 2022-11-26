@@ -7,7 +7,9 @@ function Solicitation({ navigation }) {
 
     return (
         <Container>
-            <Header />
+            <Header title={'Solicitar Medicamentos'}
+                goBack={() => navigation.goBack()}
+            />
 
             <SafeAreaView>
                 <Text style={styles.title}>Escreva o nome do medicamento</Text>
@@ -18,12 +20,17 @@ function Solicitation({ navigation }) {
                     style={styles.input}
                 />
 
+
+                <Text style={styles.title}>Anexe uma foto da receita</Text>
+
                 <TouchableOpacity style={styles.button}>
                     <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
 
 
-                <Text style={styles.title}>Anexe uma foto da receita</Text>
+
+
+
 
             </SafeAreaView>
 
@@ -34,13 +41,11 @@ function Solicitation({ navigation }) {
 
 const styles = StyleSheet.create({
     title: {
-        textAlign: 'center',
+        marginLeft: 45,
         color: 'black',
-        fontWeight: 'bold',
-        alignItems: 'center',
         fontSize: 17,
-        margin: 25,
-        marginBottom: 20,
+        margin: 30,
+        marginBottom: 5,
     },
 
     input: {

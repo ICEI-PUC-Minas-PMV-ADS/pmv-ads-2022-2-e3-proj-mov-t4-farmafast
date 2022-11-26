@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 
 import { Header, Container } from './importsComponents';
 
@@ -7,41 +7,50 @@ function Feedback({ navigation }) {
 
     return (
         <Container>
-            <Header />
+            <Header
+                title={'Feedback'}
+                goBack={() => navigation.goBack()}
+            />
 
 
             <View>
+
+                <Text style={styles.title}>Você pode avaliar o nosso atendimento?</Text>
+
                 <Text style={styles.title}>Selecione um dos números abaixo:</Text>
+
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.text}>1- Ótimo</Text>
+                    <Text style={styles.text}>1 - Muito bom</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.text}>2- Bom</Text>
+                    <Text style={styles.text}>2 - Bom</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.text}>3- Médio</Text>
+                    <Text style={styles.text}>3 - Médio</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.text}>4- Ruim</Text>
+                    <Text style={styles.text}>4 - Ruim</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.text}>5- Péssimo</Text>
+                    <Text style={styles.text}>5 - Muito ruim</Text>
                 </TouchableOpacity>
 
                 <Text style={styles.title}>Fale Conosco:</Text>
 
+
                 <TextInput
-                    placeholder='Como podemos te ajudar?'
+                    placeholder=''
                     placeholderTextColor={"black"}
                     style={styles.input}
                 />
 
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.text}>Enviar</Text>
+
+                <TouchableOpacity style={styles.buttonEnvio} onPress={() => navigation.navigate('')}>
+                    <Text style={styles.textEnvio}>Enviar</Text>
                 </TouchableOpacity>
 
             </View>
@@ -54,30 +63,41 @@ function Feedback({ navigation }) {
 
 const styles = StyleSheet.create({
     title: {
-        textAlign: 'center',
+        marginLeft: 45,
         color: 'black',
-        fontWeight: 'bold',
-        alignItems: 'center',
         fontSize: 17,
-        margin: 25,
+        margin: 30,
+        marginBottom: 20,
 
     },
 
     button: {
-        backgroundColor: '#4eabe4',
+        backgroundColor: '#83c4ec',
         width: '60%',
-        alignItems: 'center',
-        borderRadius: 4,
         marginLeft: '20%',
-        paddingVertical: 12,
+        paddingVertical: 5,
         justifyContent: 'center',
-        marginTop: 10,
-
+        marginTop: 3,
     },
-    text: {
-        color: '#fff',
-        fontWeight: 'bold',
 
+    text: {
+        color: 'black',
+    },
+
+    buttonEnvio: {
+        backgroundColor: "#4eabe4",
+        width: "80%",
+        alignItems: "center",
+        borderRadius: 4,
+        marginLeft: "10%",
+        paddingVertical: 12,
+        justifyContent: "center",
+        marginTop: 15,
+    },
+
+    textEnvio: {
+        color: '#FFF',
+        fontWeight: 'bold'
     },
     input: {
         marginTop: 1,

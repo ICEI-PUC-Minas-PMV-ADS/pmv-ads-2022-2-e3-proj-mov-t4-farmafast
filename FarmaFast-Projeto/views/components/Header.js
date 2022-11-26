@@ -3,12 +3,15 @@ import { StyleSheet, View } from 'react-native';
 import { Appbar } from 'react-native-paper';
 
 
-const Header = () => (
+const Header = ({ title, goBack }) => (
     <View>
         <Appbar.Header style={[styles.header]}>
-            <Appbar.BackAction onPress={() => { }} />
-            <Appbar.Content title={" "} />
-            <Appbar.Action icon="magnify" onPress={() => { }} />
+            {
+                goBack &&
+                <Appbar.BackAction onPress={goBack} />
+            }
+
+            <Appbar.Content title={title} />
         </Appbar.Header>
     </View>
 );
