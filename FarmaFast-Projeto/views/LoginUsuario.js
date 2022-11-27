@@ -70,9 +70,9 @@ export default function LoginUsuario({ navigation }) {
                             />{errors.password}
 
 
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
-                        <Text style={styles.buttonText}>Entrar</Text>
-                    </TouchableOpacity>
+                            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
+                                <Text style={styles.buttonText}>Entrar</Text>
+                            </TouchableOpacity>
 
                             <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
                                 <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>

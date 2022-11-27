@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, View, Image} from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 
-const ContainerLogo= () => (
+const ContainerLogo = () => (
     <View style={styles.containerLogo}>
-    <Image
-        source={require('../../assets/img/logoCircle.png')}
-        style={{ width: '60%' }}
-        resizeMode='contain' />
-</View>
+        <Image
+            source={require('../../assets/img/logoCircle.png')}
+            style={{ width: '60%' }}
+            resizeMode='contain' />
+    </View>
 
 );
 
