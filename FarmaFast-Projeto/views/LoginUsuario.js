@@ -4,6 +4,7 @@ import * as Animatable from 'react-native-animatable';
 import { TextInputMask } from "react-native-masked-text";
 import { Formik, Field, FastField, Form, Alert, validate } from 'formik';
 import PeopleService from './../Services/peopleService';
+import containerLogo from '../assets/img/logoCircle.png';
 
 export default function LoginUsuario({ navigation }) {
     function onSubmit(values, actions) {
@@ -38,7 +39,7 @@ export default function LoginUsuario({ navigation }) {
         <View style={styles.container}>
             <View style={styles.containerLogo}>
                 <Image
-                    source={require('../assets/img/logoCircle.png')}
+                    source={require(containerLogo)}
                     style={{ width: '60%' }}
                     resizeMode='contain'
                 />
