@@ -10,5 +10,7 @@ import InitialUser from './InitialUser';
 import InitialPharma from './InitialPharma';
 import Solicitation from './Solicitation';
 import Feedback from './Feedback';
+import Photo from './Photo';
 
-export {Inicial, LoginFarmacia, LoginUsuario, RegisterPharma, RegisterUser, RedefinedPasswordUser, RedefinedPasswordPharma, UpdateStatus, InitialUser, InitialPharma, Solicitation, Feedback}
+
+export {Inicial, LoginFarmacia, LoginUsuario, RegisterPharma, RegisterUser, RedefinedPasswordUser, RedefinedPasswordPharma, UpdateStatus, InitialUser, InitialPharma, Solicitation, Feedback, Photo}
