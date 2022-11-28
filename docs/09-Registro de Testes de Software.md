@@ -49,7 +49,9 @@
 ## Avaliação
 
 Para próximas iterações, o grupo pretende, não só melhorar o design das telas e corrigir as falhas encontradas, mas principalmente, implementar soluções para otimizar ainda mais o processo para os usuários e as farmácias que utilizarem a aplicação.
-Pode-se esperar para o usuário:
+Pode-se esperar:
+
+Para o usuário:
 - Tela de avaliação (feedback);
 - Personalização de perfil;
 - Foco para a câmera da tela de solicitação.
