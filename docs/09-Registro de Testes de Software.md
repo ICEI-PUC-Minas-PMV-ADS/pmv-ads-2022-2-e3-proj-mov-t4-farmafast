@@ -48,7 +48,15 @@
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Para próximas iterações, o grupo pretende, não só melhorar o design das telas e corrigir as falhas encontradas, mas principalmente, implementar soluções para otimizar ainda mais o processo para os usuários e as farmácias que utilizarem a aplicação.
+Pode-se esperar para o usuário:
+- Tela de avaliação (feedback);
+- Personalização de perfil;
+- Foco para a câmera da tela de solicitação.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+Para a farmácia:
+- Possibilidade de troca de senha;
+- Tela de feedbacks recebidos;
+- Personalização de perfil;
+- Personalização de mensagens automáticas como retorno ao usuário.
+
