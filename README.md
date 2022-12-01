@@ -13,7 +13,6 @@ Este projeto trata-se do desenvolvimento de uma aplicação funcional, que  auxi
 ## Integrantes
 
 * Arthur Victor de Paula
-* Fábio Furlan
 * Isabella Carolina de Almeida Siqueira Damião
 * Julia Mendes Lima da Cunha
 * Vitória Gabriella Maffei Corrêa Rocha
