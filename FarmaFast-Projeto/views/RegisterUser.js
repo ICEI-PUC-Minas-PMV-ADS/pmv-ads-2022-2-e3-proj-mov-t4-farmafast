@@ -13,7 +13,7 @@ var schema = yup.object({
     userdate: yup.number().required("Informe sua data de nascimento!"),
     email: yup.string().email("Email Inválido!").required("Informe seu e-mail!"),
     password: yup.string().min(6, "A senha deve ter pelo menos 6 digitos").required("Informe sua senha"),
-    // passwordconfirm: yup.string().required("As senhas devem ser iguais!")
+    passwordconfirm: yup.string().required("As senhas devem ser iguais!")
 });
 
 export default function RegisterUser({ navigation: { goBack } }) {
@@ -71,7 +71,7 @@ export default function RegisterUser({ navigation: { goBack } }) {
                             value={value}
                             placeholder="000.000.000-00" />
                     )} />
-                {/* <Text style={styles.labelError}>{errors.usercpf && errors.usercpf?.message}</Text> */}
+                <Text style={styles.labelError}>{errors.usercpf && errors.usercpf?.message}</Text>
 
                 <Text style={styles.title}>Data de nascimento</Text>
                 <Controller
@@ -88,7 +88,7 @@ export default function RegisterUser({ navigation: { goBack } }) {
                             value={value}
                             placeholder="00/00/0000" />
                     )} />
-                {/* <Text style={styles.labelError}>{errors.userdate && errors.userdate?.message}</Text> */}
+                <Text style={styles.labelError}>{errors.userdate && errors.userdate?.message}</Text>
 
                 <Text style={styles.title}>Email</Text>
                 <Controller
@@ -105,7 +105,7 @@ export default function RegisterUser({ navigation: { goBack } }) {
                             value={value}
                             placeholder="Digite seu melhor email" />
                     )} />
-                {/* <Text style={styles.labelError}>{errors.email && errors.email?.message}</Text> */}
+                <Text style={styles.labelError}>{errors.email && errors.email?.message}</Text>
 
                 <Text style={styles.title}>Senha</Text>
                 <Controller
@@ -124,7 +124,7 @@ export default function RegisterUser({ navigation: { goBack } }) {
                             type="password"
                             secureTextEntry={true} />
                     )} />
-                {/* <Text style={styles.labelError}>{errors.password && errors.password?.message}</Text> */}
+                <Text style={styles.labelError}>{errors.password && errors.password?.message}</Text>
 
 
                 <Text style={styles.title}>Confirme sua senha</Text>
@@ -144,7 +144,7 @@ export default function RegisterUser({ navigation: { goBack } }) {
                             type="password"
                             secureTextEntry={true} />
                     )} />
-                {/* <Text style={styles.labelError}>{errors.passwordconfirm && errors.passwordconfirm?.message}</Text> */}
+                <Text style={styles.labelError}>{errors.passwordconfirm && errors.passwordconfirm?.message}</Text>
 
                 <TouchableOpacity style={styles.button} onPress={handleSubmit(handleCadastro)}>
                     <Text style={styles.buttonText}>
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     input: {
         marginTop: 5,
         marginLeft: '10%',
-        padding: 15,
+        padding: 8,
         width: 300,
         backgroundColor: '#e0e1e6',
         fontSize: 16,
