@@ -1,102 +1,160 @@
 import React from 'react';
-import { Button, View, Text, TouchableOpacity, StyleSheet, Image, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
+import { Header, Container } from './importsComponents';
 import * as Animatable from 'react-native-animatable';
-import { Formik, Field, FastField, Form } from 'formik';
+import { useForm, Controller } from "react-hook-form";
+import * as yup from 'yup';
+import { yupResolver } from "@hookform/resolvers/yup";
 import PeopleService from './../Services/peopleService';
 
-export default function RegisterUser({ navigation }) {
-    function onSubmit(values, actions) {
-        if (values !== undefined) {
-            // console.info('SUBMIT', values);
+var schema = yup.object({
+    username: yup.string().required("Informe seu nome completo!"),
+    usercpf: yup.number().required("Informe seu cpf!"),
+    userdate: yup.number().required("Informe sua data de nascimento!"),
+    email: yup.string().email("Email Inválido!").required("Informe seu e-mail!"),
+    password: yup.string().min(6, "A senha deve ter pelo menos 6 digitos").required("Informe sua senha"),
+    // passwordconfirm: yup.string().required("As senhas devem ser iguais!")
+});
 
-            if (values.password != values.passwordconfirm)
-                return "Ops! The passwords isn't matching.";
+export default function RegisterUser({ navigation: { goBack } }) {
 
-            let service = new PeopleService();
-            var data = {
-                "name": values.name,
-                "cpf": values.cpf,
-                "birthdate": values.birthdate,
-                "password": values.password
-            }
-            service.Save(data);
-        }
+    var { control, handleSubmit, formState: { errors } } = useForm({
+        resolver: yupResolver(schema)
+    });
 
-    };
+    function handleCadastro(data) {
+        let service = new PeopleService();
+        alert(data);
+        // service.Save(data);
+        console.log(data);
+    }
+
     return (
+
         <View style={styles.container}>
-            <View style={styles.containerLogo}>
-                <Image
-                    source={require('../assets/img/logoCircle.png')}
-                    style={{ width: '60%' }}
-                    resizeMode='contain' />
-            </View>
+
+            <Header title={'Registro de Usuário'}
+                goBack={() => goBack()}
+            />
             <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
-                <Formik
-                    onSubmit={onSubmit}
-                    initialValues={{ name: '', cpf: '', password: '', passwordconfirm: '', birthdate: '' }}
-                    render={({ values }) => (
-                        <Form>
-                            <Text style={styles.title}>Nome Completo</Text>
-                            <Field
-                                style={styles.input}
-                                placeholder="Digite o seu nome completo"
-                                name="name"
-                                type="text"
-                            />
 
-                            <Text style={styles.title}>CPF</Text>
-                            <Field style={styles.input}
-                                // type={'cpf'}
-                                placeholder="000.000.000-00"
-                                // keyboardType='numeric'
-                                name="cpf"
-                                type="text"
-                            // onFocusOut={text => setCpf(text)}                            
-                            />
 
-                            <Text style={styles.title}>Data de nascimento</Text>
-                            <Field
-                                style={styles.input}
-                                placeholder="00/00/0000"
-                                // keyboardType='numeric'
-                                name="birthdate"
-                                type="date"
-                            // onFocusOut={text => setDate(text)}
-                            />
+                <Text style={styles.title}>Nome Completo</Text>
+                <Controller
+                    control={control}
+                    name="username"
+                    render={({ field: { onChange, onBlur, value } }) => (
+                        <TextInput
+                            style={[styles.input, {
+                                borderWidth: errors.username && 1,
+                                borderColor: errors.username && '#ff375b'
+                            }]}
+                            onChangeText={onChange}
+                            onBlur={onBlur} //chamado quando o textinput é trocado
+                            value={value}
+                            placeholder="Digite o seu nome completo" />
+                    )} />
+                <Text style={styles.labelError}>{errors.username && errors.username?.message}</Text>
 
-                            <Text style={styles.title}>Senha</Text>
-                            <Field
-                                style={styles.input}
-                                // secureTextEntry={true}
-                                placeholder="Digite sua senha"
-                                name="password"
-                                type="password"
-                            />
+                <Text style={styles.title}>CPF</Text>
+                <Controller
+                    control={control}
+                    name="usercpf"
+                    render={({ field: { onChange, onBlur, value } }) => (
+                        <TextInput
+                            style={[styles.input, {
+                                borderWidth: errors.usercpf && 1,
+                                borderColor: errors.usercpf && '#ff375b'
+                            }]}
+                            onChangeText={onChange}
+                            onBlur={onBlur}
+                            value={value}
+                            placeholder="000.000.000-00" />
+                    )} />
+                {/* <Text style={styles.labelError}>{errors.usercpf && errors.usercpf?.message}</Text> */}
 
-                            <Text style={styles.title}>Confirme sua senha</Text>
-                            <Field
-                                style={styles.input}
-                                // secureTextEntry={true}
-                                placeholder="Repita sua senha"
-                                name="passwordconfirm"
-                                type="password"
-                            />
+                <Text style={styles.title}>Data de nascimento</Text>
+                <Controller
+                    control={control}
+                    name="userdate"
+                    render={({ field: { onChange, onBlur, value } }) => (
+                        <TextInput
+                            style={[styles.input, {
+                                borderWidth: errors.userdate && 1,
+                                borderColor: errors.userdate && '#ff375b'
+                            }]}
+                            onChangeText={onChange}
+                            onBlur={onBlur}
+                            value={value}
+                            placeholder="00/00/0000" />
+                    )} />
+                {/* <Text style={styles.labelError}>{errors.userdate && errors.userdate?.message}</Text> */}
 
-                            <TouchableOpacity style={styles.button1}>
-                                <button type="submit" title="Cadastrar" value="Cadastrar">
-                                    Cadastrar
-                                </button>
-                            </TouchableOpacity>
-                        </Form>
-                    )}
-                />
+                <Text style={styles.title}>Email</Text>
+                <Controller
+                    control={control}
+                    name="email"
+                    render={({ field: { onChange, onBlur, value } }) => (
+                        <TextInput
+                            style={[styles.input, {
+                                borderWidth: errors.email && 1,
+                                borderColor: errors.email && '#ff375b'
+                            }]}
+                            onChangeText={onChange}
+                            onBlur={onBlur}
+                            value={value}
+                            placeholder="Digite seu melhor email" />
+                    )} />
+                {/* <Text style={styles.labelError}>{errors.email && errors.email?.message}</Text> */}
+
+                <Text style={styles.title}>Senha</Text>
+                <Controller
+                    control={control}
+                    name="password"
+                    render={({ field: { onChange, onBlur, value } }) => (
+                        <TextInput
+                            style={[styles.input, {
+                                borderWidth: errors.password && 1,
+                                borderColor: errors.password && '#ff375b'
+                            }]}
+                            onChangeText={onChange}
+                            onBlur={onBlur}
+                            value={value}
+                            placeholder="Digite sua senha"
+                            type="password"
+                            secureTextEntry={true} />
+                    )} />
+                {/* <Text style={styles.labelError}>{errors.password && errors.password?.message}</Text> */}
+
+
+                <Text style={styles.title}>Confirme sua senha</Text>
+                <Controller
+                    control={control}
+                    name="passwordconfirm"
+                    render={({ field: { onChange, onBlur, value } }) => (
+                        <TextInput
+                            style={[styles.input, {
+                                borderWidth: errors.passwordconfirm && 1,
+                                borderColor: errors.passwordconfirm && '#ff375b'
+                            }]}
+                            onChangeText={onChange}
+                            onBlur={onBlur}
+                            value={value}
+                            placeholder="Digite sua senha"
+                            type="password"
+                            secureTextEntry={true} />
+                    )} />
+                {/* <Text style={styles.labelError}>{errors.passwordconfirm && errors.passwordconfirm?.message}</Text> */}
+
+                <TouchableOpacity style={styles.button} onPress={handleSubmit(handleCadastro)}>
+                    <Text style={styles.buttonText}>
+                        Cadastrar
+                    </Text>
+                </TouchableOpacity>
             </Animatable.View>
-        </View >
-    );
+        </View>
+    )
 };
-
-
 
 const styles = StyleSheet.create({
     container: {
@@ -128,37 +186,33 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: '#4eabe4',
-        width: '80%',
-        alignItems: 'center',
-        borderRadius: 4,
-        marginLeft: '10%',
-        paddingVertical: 10,
-        justifyContent: 'center',
-        marginTop: 15,
-    },
-    button1: {
-        backgroundColor: '#4eabe4',
         width: '40%',
-        height: '20px',
+        height: 40,
         alignItems: 'center',
         borderRadius: 4,
-        marginLeft: '10%',
+        marginLeft: '32%',
         paddingVertical: 10,
-        justifyContent: 'center',
         marginTop: 15,
     },
     buttonText: {
         color: '#fff',
-        fontSize: 18,
-        fontWeight: 'bold'
+        fontSize: 15,
+        fontWeight: 'bold',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     containerLogo: {
         flex: 0.8,
         justifyContent: 'center',
-        alignItems: 'center',
-
+        alignItems: 'center'
     },
-
-
+    labelError: {
+        alignSelf: 'flex-start',
+        color: '#ff375b',
+        fontSize: 17,
+        fontWeight: 'bold',
+        marginBottom: 8,
+        marginLeft: '10%',
+    }
 });
 
