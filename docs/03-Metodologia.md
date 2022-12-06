@@ -44,7 +44,6 @@ c) Equipe de Desenvolvimento
 • Vitória Gabriella Maffei Corrêa Rocha </br>
 • Isabella Carolina De Almeida Siqueira Damião </br>
 • Julia Mendes Lima da Cunha </br>
-• Fábio Furlan </br>
 • Arthur Victor de Paula </br>
 
 d) Equipe de Design
@@ -52,7 +51,6 @@ d) Equipe de Design
 • Vitória Gabriella Maffei Corrêa Rocha </br>
 • Isabella Carolina De Almeida Siqueira Damião </br>
 • Julia Mendes Lima da Cunha </br>
-• Fábio Furlan </br>
 • Arthur Victor de Paula </br>
 
 ### Processo
