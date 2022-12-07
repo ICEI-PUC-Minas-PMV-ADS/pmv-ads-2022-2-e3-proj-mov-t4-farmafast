@@ -1,27 +1,22 @@
+
+
+
+
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+[PDF de apresentação](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/files/10179037/PDF.apresentacao.pdf)
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+[Vídeo de apresentação](https://user-images.githubusercontent.com/84861435/206270342-632a5bde-b29d-4bf5-bdbe-297beb8a13d7.mp4)
+
 
 ## Título do Projeto
 
-Nome e marca do projeto
+O nome FarmaFast foi pensado com base na ideia principal da aplicação: o atendimento mais rápido para os clientes de farmácias. 
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+#### Paleta de cores
+![Paleta de cores](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/Captura%20de%20tela_20221207_154327.png)
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
-
-## Conjunto de Slides (Estrutura)
-
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+#### Logotipo
+![Logotipo FarmaFast](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/PharmaPUC%20(1).jpg)
