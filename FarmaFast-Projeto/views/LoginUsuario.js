@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
+import { Platform, View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { TextInputMask } from "react-native-masked-text";
+<<<<<<< HEAD
 import PeopleService from './../Services/peopleService';
 
 export default function LoginUsuario({ navigation }) {
@@ -11,11 +12,19 @@ export default function LoginUsuario({ navigation }) {
     function onSubmit(values, actions) {
         if (values !== undefined) {
             // console.info('SUBMIT', values);
+=======
 
-            if (values.cpf != values.cpf && values.password != values.password)
-                console.log("Ops! Invalid CPF or password");
+export default function LoginUsuario({ navigation }) {
+>>>>>>> origin
 
+    const [display, setDisplay] = useState('none');
+    const [cpf, setCpf] = useState('');
 
+    <View>
+        <Text style={styles.login__msg(display)}>CPF ou senha inválidos!</Text>
+    </View>
+
+<<<<<<< HEAD
             let service = new PeopleService();
             var data = {
                 "cpf": values.cpf,
@@ -35,17 +44,58 @@ export default function LoginUsuario({ navigation }) {
 
         }
     }
+=======
+>>>>>>> origin
 
     return (
-        <View style={styles.container}>
-            <View style={styles.containerLogo}>
-                <Image
-                    source={require('../assets/img/logoCircle.png')}
-                    style={{ width: '60%' }}
-                    resizeMode='contain'
-                />
-            </View>
 
+        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
+            <View style={styles.container}>
+                <View style={styles.containerLogo}>
+                    <Image
+                        source={require('../assets/img/logoCircle.png')}
+                        style={{ width: '60%' }}
+                        resizeMode='contain' />
+                </View>
+
+
+                <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
+
+                    <Text style={styles.title}>CPF</Text>
+                    <TextInputMask style={styles.input}
+                        type={'cnpj'}
+                        placeholder="000.000.000-00"
+                        keyboardType='numeric'
+                        value={cpf}
+                        onChangeText={text => setCpf(text)}
+                    />
+
+                    <Text style={styles.title}>Senha</Text>
+                    <TextInput
+                        style={styles.input}
+                        secureTextEntry={true}
+                        placeholder="Digite sua senha" />
+
+
+                    <TouchableOpacity style={styles.button} onPress={() =>navigation.navigate('InitialUser')}>
+                        <Text style={styles.buttonText}>Entrar</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
+                        <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.buttonForgot} onPress={() => navigation.navigate('RedefinedPasswordUser')}>
+                        <Text style={styles.forgotText}>Redefinir senha</Text>
+                    </TouchableOpacity>
+
+
+                </Animatable.View>
+
+            </View>
+        </KeyboardAvoidingView>
+
+<<<<<<< HEAD
             <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
 
                 <Text style={styles.title}>CPF</Text>
@@ -83,6 +133,11 @@ export default function LoginUsuario({ navigation }) {
         </View >
     );
 };
+=======
+    )
+}
+
+>>>>>>> origin
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -106,6 +161,14 @@ const styles = StyleSheet.create({
         marginTop: 5,
         marginLeft: '10%',
     },
+    loginMsg: (text = 'none') => ({
+        fontWeight: 'bold',
+        fontSize: 22,
+        color: '#e0e1e6',
+        marginTop: 10,
+        marginBottom: 15,
+        display: 'text'
+    }),
     input: {
         marginTop: 5,
         marginLeft: '10%',
@@ -149,9 +212,6 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold'
     },
-    darkbg: {
-        backgroundColor: "#333"
-    },
     login__msg: (text = 'none') => ({
         fontWeight: "bold",
         fontSize: 22,
@@ -160,4 +220,6 @@ const styles = StyleSheet.create({
         display: text
     }
     ),
-})
+}
+
+)

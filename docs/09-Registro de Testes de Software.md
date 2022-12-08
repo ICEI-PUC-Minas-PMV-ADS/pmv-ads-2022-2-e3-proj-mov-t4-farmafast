@@ -4,19 +4,19 @@
 
 | Testes 	| CT 01 – Cadastro do usuário |
 |:---:	|:---:	|
-~ [link do vídeo ou imagem aqui ](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/video%20user.mp4)~
+~ [https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/ct1.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/video%20user.mp4)~
 
 | Testes 	| CT 02 – Cadastro da farmácia |
 |:---:	|:---:	|
-~ [link do vídeo ou imagem aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/video%20farm.mp4) ~
+~ [https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/ct8.mp4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/video%20farm.mp4) ~
 
 | Testes 	| CT 03 – Efetuar login do usuário |
 |:---:	|:---:	|
-~ link do vídeo ou imagem aqui ~
+~ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/ct3.mp4 ~
 
 | Testes 	| CT 04 – Efetuar login da farmácia |
 |:---:	|:---:	|
-~ link do vídeo ou imagem aqui ~
+~ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/ct4.mp4 ~
 
 | Testes 	| CT 05 – Recuperação de senha |
 |:---:	|:---:	|
@@ -24,7 +24,7 @@
 
 | Testes 	| CT 06 – Solicitação do medicamento |
 |:---:	|:---:	|
-~ link do vídeo ou imagem aqui ~
+~ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/ct6.mp4 ~
 
 | Testes 	| CT 07 – Status de solicitação |
 |:---:	|:---:	|
@@ -32,7 +32,7 @@
 
 | Testes 	| CT 08 – Feedback do atendimento |
 |:---:	|:---:	|
-~ link do vídeo ou imagem aqui ~
+~ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e3-proj-mov-t4-farmafast/blob/main/docs/img/ct8.mp4 ~
 
 | Testes 	| CT 09 – Novas solicitações na farmácia |
 |:---:	|:---:	|
@@ -48,7 +48,17 @@
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Para próximas iterações, o grupo pretende, não só melhorar o design das telas e corrigir as falhas encontradas, mas principalmente, implementar soluções para otimizar ainda mais o processo para os usuários e as farmácias que utilizarem a aplicação.
+Pode-se esperar:
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+Para o usuário:
+- Tela de avaliação (feedback);
+- Personalização de perfil;
+- Foco para a câmera da tela de solicitação.
+
+Para a farmácia:
+- Possibilidade de troca de senha;
+- Tela de feedbacks recebidos;
+- Personalização de perfil;
+- Personalização de mensagens automáticas como retorno ao usuário.
+

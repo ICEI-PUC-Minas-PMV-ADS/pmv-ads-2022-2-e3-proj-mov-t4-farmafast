@@ -9,11 +9,11 @@ function InitialUser({ navigation }) {
 
         <Container>
             <Header title={'Tela Inicial'} />
-            <ContainerLogo />
+        <ContainerLogo />
 
             <View>
 
-                <Text style={styles.title}>Bem-vindo ao Farma Fast. Selecione uma das opções:</Text>
+                <Text style={styles.title}>Bem-vindo ao FarmaFast. Selecione uma das opções:</Text>
 
                 <TouchableOpacity style={styles.button} mode="elevated" onPress={() => navigation.navigate('Solicitation')}>
                     <Text style={styles.text}>Solicitar Medicamentos</Text>

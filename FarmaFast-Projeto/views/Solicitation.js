@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native';
-
-import { Header, Container } from './importsComponents';
+import { Header, Container, ContainerLogo } from './importsComponents';
 
 function Solicitation({ navigation }) {
 
     return (
+
+
         <Container>
-            <Header title={'Solicitar Medicamentos'}
-                goBack={() => navigation.goBack()}
-            />
+            <Header title={'Tela Inicial'} 
+            goBack={() => navigation.goBack()}/>
+        <ContainerLogo />
 
             <SafeAreaView>
                 <Text style={styles.title}>Escreva o nome do medicamento</Text>
@@ -23,14 +24,9 @@ function Solicitation({ navigation }) {
 
                 <Text style={styles.title}>Anexe uma foto da receita</Text>
 
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}>Enviar</Text>
+                <TouchableOpacity style={styles.button}  onPress={() => navigation.navigate('Photo')}>
+                    <Text style={styles.buttonText}>Câmera</Text>
                 </TouchableOpacity>
-
-
-
-
-
 
             </SafeAreaView>
 
@@ -76,4 +72,3 @@ const styles = StyleSheet.create({
 
 
 export default Solicitation;
-

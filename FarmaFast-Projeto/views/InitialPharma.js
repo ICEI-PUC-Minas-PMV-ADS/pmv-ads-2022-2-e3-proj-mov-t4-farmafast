@@ -13,7 +13,7 @@ function InitialPharma({ navigation }) {
             <View>
 
 
-                <Text style={styles.title}>Bem-vindo ao Farma Fast. Selecione uma das opções:</Text>
+                <Text style={styles.title}>Bem-vindo ao FarmaFast. Selecione uma das opções:</Text>
 
 
                 <TouchableOpacity style={styles.button} mode="elevated" onPress={() => navigation.navigate('Solicitation')}>
