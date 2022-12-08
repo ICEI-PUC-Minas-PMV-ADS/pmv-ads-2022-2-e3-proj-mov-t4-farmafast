@@ -2,8 +2,20 @@ import React, { useState } from 'react';
 import { Platform, View, Text, StyleSheet, Alert, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { TextInputMask } from "react-native-masked-text";
+<<<<<<< HEAD
+import PeopleService from './../Services/peopleService';
 
 export default function LoginUsuario({ navigation }) {
+
+    var errors = {};
+
+    function onSubmit(values, actions) {
+        if (values !== undefined) {
+            // console.info('SUBMIT', values);
+=======
+
+export default function LoginUsuario({ navigation }) {
+>>>>>>> origin
 
     const [display, setDisplay] = useState('none');
     const [cpf, setCpf] = useState('');
@@ -12,6 +24,28 @@ export default function LoginUsuario({ navigation }) {
         <Text style={styles.login__msg(display)}>CPF ou senha inválidos!</Text>
     </View>
 
+<<<<<<< HEAD
+            let service = new PeopleService();
+            var data = {
+                "cpf": values.cpf,
+                "password": values.password
+            }
+            service.ListAll(data);
+        }
+        function validate(values) {
+
+            if (!values.cpf) {
+                errors.cpf = "Oops! The CPF is mandatory."
+            }
+            if (!values.password) {
+                errors.password = "Oops! The password is mandatory."
+            }
+            return errors;
+
+        }
+    }
+=======
+>>>>>>> origin
 
     return (
 
@@ -61,9 +95,49 @@ export default function LoginUsuario({ navigation }) {
             </View>
         </KeyboardAvoidingView>
 
+<<<<<<< HEAD
+            <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
+
+                <Text style={styles.title}>CPF</Text>
+                <TextInput style={styles.input}
+                    // type={'cpf'}
+                    placeholder="000.000.000-00"
+                    // keyboardType='numeric'
+                    name="cpf"
+                    type="text"
+                // onFocusOut={text => setCpf(text)}                            
+                />{errors.cpf}
+
+                <Text style={styles.title}>Senha</Text>
+                <TextInput
+                    style={styles.input}
+                    // secureTextEntry={true}
+                    placeholder="Digite sua senha"
+                    name="password"
+                    type="password"
+                />{errors.password}
+
+
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
+                    <Text style={styles.buttonText}>Entrar</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
+                    <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.buttonForgot}>
+                    <Text style={styles.forgotText}>Esqueci minha senha</Text>
+                </TouchableOpacity>
+            </Animatable.View>
+        </View >
+    );
+};
+=======
     )
 }
 
+>>>>>>> origin
 const styles = StyleSheet.create({
     container: {
         flex: 1,

@@ -25,7 +25,7 @@ class PeopleService {
     };
 
     Save(data) {
-        api.post('/people', data)
+        api.post('/people/', data)
             .then((response) => setUser(response.data))
             .catch((err) => {
                 console.error("ops! ocorreu um erro" + err);

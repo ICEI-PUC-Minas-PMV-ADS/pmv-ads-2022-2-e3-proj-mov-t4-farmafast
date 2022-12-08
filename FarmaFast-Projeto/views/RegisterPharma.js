@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+import React from 'react';
+import { Button, View, Text, TouchableOpacity, StyleSheet, Image, TextInput } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import companiesService from './../Services/companiesService';
+=======
 import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import * as Animatable from 'react-native-animatable'
 import { useNavigation } from '@react-navigation/native'
+>>>>>>> origin
 
 
 export default function RegisterPharma({navigation}) {
@@ -28,6 +35,15 @@ export default function RegisterPharma({navigation}) {
         placeholder="00.000.000/0000-00"
         keyboardType='numeric'/>
 
+<<<<<<< HEAD
+                        <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
+                                {/* 
+                                <Formik
+                                        onSubmit={onSubmit}
+                                        initialValues={{ name: '', cnpj: '', password: '', passwordconfirm: '' }}
+                                        render={({ values }) => (
+                                                <Form>
+=======
         <Text style={styles.title}>Senha</Text>
         <TextInput
             style={styles.input}
@@ -39,16 +55,50 @@ export default function RegisterPharma({navigation}) {
             style={styles.input}
             secureTextEntry={true}
             placeholder="Repita sua senha" />
+>>>>>>> origin
 
             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('LoginFarmacia')}>
                 <Text style={styles.buttonText}>Cadastrar</Text>
             </TouchableOpacity>
 
 
+<<<<<<< HEAD
+                                                        <Text style={styles.title}>Senha</Text>
+                                                        <Field
+                                                                style={styles.input}
+                                                                // secureTextEntry={true}
+                                                                placeholder="Digite sua senha"
+                                                                name="password"
+                                                                type="password"
+                                                        />
+
+                                                        <Text style={styles.title}>Confirme sua senha</Text>
+                                                        <Field
+                                                                style={styles.input}
+                                                                // secureTextEntry={true}
+                                                                placeholder="Repita sua senha"
+                                                                name="passwordconfirm"
+                                                                type="password"
+                                                        />
+
+                                                        <TouchableOpacity style={styles.button1}>
+                                                                <button type="submit" title="Cadastrar" value="Cadastrar">
+                                                                        Cadastrar
+                                                                </button>
+                                                        </TouchableOpacity>
+                                                </Form>
+                                        )}
+                                /> */}
+                        </Animatable.View>
+                </View>
+        );
+};
+=======
     </Animatable.View>
     </View>
   )
 }
+>>>>>>> origin
 
 const styles = StyleSheet.create({
 container:{
