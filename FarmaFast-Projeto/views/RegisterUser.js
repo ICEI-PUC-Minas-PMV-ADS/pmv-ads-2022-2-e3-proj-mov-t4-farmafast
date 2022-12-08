@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
-import { Header, Container } from './importsComponents';
+import { Header } from './importsComponents';
 import * as Animatable from 'react-native-animatable';
 import { useForm, Controller } from "react-hook-form";
 import * as yup from 'yup';
@@ -24,9 +24,9 @@ export default function RegisterUser({ navigation: { goBack } }) {
 
     function handleCadastro(data) {
         let service = new PeopleService();
-        alert(data);
-        // service.Save(data);
-        console.log(data);
+        console.info(data);
+        service.Save(data);
+
     }
 
     return (
@@ -215,4 +215,3 @@ const styles = StyleSheet.create({
         marginLeft: '10%',
     }
 });
-

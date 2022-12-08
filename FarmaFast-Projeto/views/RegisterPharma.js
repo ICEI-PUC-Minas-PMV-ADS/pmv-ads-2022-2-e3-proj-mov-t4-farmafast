@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, View, Text, TouchableOpacity, StyleSheet, Image, TextInput } from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import { Formik, Field, FastField, Form } from 'formik';
 import companiesService from './../Services/companiesService';
 
 
@@ -34,7 +33,7 @@ export default function RegisterPharma({ navigation }) {
                         </View>
 
                         <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
-
+                                {/* 
                                 <Formik
                                         onSubmit={onSubmit}
                                         initialValues={{ name: '', cnpj: '', password: '', passwordconfirm: '' }}
@@ -84,7 +83,7 @@ export default function RegisterPharma({ navigation }) {
                                                         </TouchableOpacity>
                                                 </Form>
                                         )}
-                                />
+                                /> */}
                         </Animatable.View>
                 </View>
         );

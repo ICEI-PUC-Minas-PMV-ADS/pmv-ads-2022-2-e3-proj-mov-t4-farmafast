@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { TextInputMask } from "react-native-masked-text";
-import { Formik, Field, FastField, Form, Alert, validate } from 'formik';
 import PeopleService from './../Services/peopleService';
-import containerLogo from '../assets/img/logoCircle.png';
 
 export default function LoginUsuario({ navigation }) {
+
+    var errors = {};
+
     function onSubmit(values, actions) {
         if (values !== undefined) {
             // console.info('SUBMIT', values);
@@ -23,7 +24,7 @@ export default function LoginUsuario({ navigation }) {
             service.ListAll(data);
         }
         function validate(values) {
-            const errors = {};
+
             if (!values.cpf) {
                 errors.cpf = "Oops! The CPF is mandatory."
             }
@@ -39,52 +40,45 @@ export default function LoginUsuario({ navigation }) {
         <View style={styles.container}>
             <View style={styles.containerLogo}>
                 <Image
-                    source={require(containerLogo)}
+                    source={require('../assets/img/logoCircle.png')}
                     style={{ width: '60%' }}
                     resizeMode='contain'
                 />
             </View>
 
             <Animatable.View animation="fadeInUp" styles={styles.containerForm}>
-                <Formik
-                    onSubmit={onSubmit}
-                    initialValues={{ cpf: '', password: '' }}
-                    render={({ values, errors }) => (
-                        <Form>
-                            <Text style={styles.title}>CPF</Text>
-                            <Field style={styles.input}
-                                // type={'cpf'}
-                                placeholder="000.000.000-00"
-                                // keyboardType='numeric'
-                                name="cpf"
-                                type="text"
-                            // onFocusOut={text => setCpf(text)}                            
-                            />{errors.cpf}
 
-                            <Text style={styles.title}>Senha</Text>
-                            <Field
-                                style={styles.input}
-                                // secureTextEntry={true}
-                                placeholder="Digite sua senha"
-                                name="password"
-                                type="password"
-                            />{errors.password}
+                <Text style={styles.title}>CPF</Text>
+                <TextInput style={styles.input}
+                    // type={'cpf'}
+                    placeholder="000.000.000-00"
+                    // keyboardType='numeric'
+                    name="cpf"
+                    type="text"
+                // onFocusOut={text => setCpf(text)}                            
+                />{errors.cpf}
+
+                <Text style={styles.title}>Senha</Text>
+                <TextInput
+                    style={styles.input}
+                    // secureTextEntry={true}
+                    placeholder="Digite sua senha"
+                    name="password"
+                    type="password"
+                />{errors.password}
 
 
-                            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
-                                <Text style={styles.buttonText}>Entrar</Text>
-                            </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InitialUser')}>
+                    <Text style={styles.buttonText}>Entrar</Text>
+                </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
-                                <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
-                            </TouchableOpacity>
+                <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('RegisterUser')}>
+                    <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
+                </TouchableOpacity>
 
-                            <TouchableOpacity style={styles.buttonForgot}>
-                                <Text style={styles.forgotText}>Esqueci minha senha</Text>
-                            </TouchableOpacity>
-                        </Form>
-                    )}
-                />
+                <TouchableOpacity style={styles.buttonForgot}>
+                    <Text style={styles.forgotText}>Esqueci minha senha</Text>
+                </TouchableOpacity>
             </Animatable.View>
         </View >
     );
